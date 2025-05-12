@@ -1,0 +1,122 @@
+
+.license{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #1c1b21;
+    color: #4a5566;
+    padding: 50px 50px 10px 50px;
+    height: 100vh;
+
+
+    .top{
+        display: flex;
+        gap: 235px;
+    
+
+        .left{
+            flex: 2;
+
+            img{
+                width: 100%;
+            }
+          
+       
+
+        }
+        .right{
+            flex: 8;
+            display: flex;
+            gap: 10px;
+
+            img{
+                width: 25px;
+            } 
+
+            .regulations{
+                display: flex;
+                width: 90%;
+            }
+            .regulation{
+                color: white;
+                display: flex;
+                align-items: center;
+                width: 25%;
+                font-weight: 500;
+                font-size: 18px;
+                gap: 5px;
+
+                &.small{
+                    width: 12%;;
+                }
+
+            }
+
+        }
+
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: column;
+
+        img{
+            height: 25px;
+        }
+
+        .first-row{
+            display: flex;
+            align-items: center;
+
+            .left{
+                flex: 1;
+            }
+    
+    
+            .right{
+                display: flex;
+                justify-content: space-between;
+                flex: 2;
+    
+            }
+
+        }
+        .second-row{
+            display: flex;
+            align-items: center;
+
+            .left{
+                flex: 1;
+            }
+            .right{
+                flex: 2;
+            }
+
+        }
+        .third-row{
+            display: flex;
+        }
+
+      
+
+    }
+    .bottom{
+        line-height: 2;
+        font-size: 16px;
+
+
+        .terms-conditions{
+            color: #049358;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .risk-disclosure{
+            color: #049358;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

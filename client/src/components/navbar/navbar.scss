@@ -1,0 +1,83 @@
+
+
+.navbar{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 10px 50px;
+
+
+    .links{
+        width: 45%;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            li{
+                .link{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    &:hover{
+                        color:#01a876 ;
+                    }
+
+                    &:hover .arrow{
+                        transform: rotate(90deg);
+                    }
+                
+
+                    .arrow{
+                        width: 20px;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+    .account{
+        width: 17%;
+        display: flex;
+        justify-content: space-between;
+
+
+        .registration{
+
+            button{
+                background-color: #01a976;
+                border: 1px solid #01a976;
+                border-radius: 5px;
+                padding: 15px;
+
+                &:hover{
+                    background-color: #02c087;
+                }
+            }
+        }
+
+        .login{
+
+            button{
+                background-color: black;
+                padding: 15px;
+                border: 1px solid #01a976;
+                border-radius: 5px;
+
+                &:hover{
+                    color: #01a976 ;
+                }
+            }
+        }
+
+ 
+
+    }
+     
+}

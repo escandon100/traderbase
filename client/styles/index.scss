@@ -1,3 +1,21 @@
 body{
+  color: white;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: 'Futura PT', 'Open Sans', sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+ul{
+  margin: 0px;
+}
+button{
+  color: white;
 }
