@@ -1,0 +1,27 @@
+
+
+.about{
+    display: flex;
+    background-color: #242730;
+    justify-content: space-around;
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;        
+        li{
+            list-style-type: circle;
+            color: #01a976;
+
+            .aboutLinks{
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            
+        }
+    }
+}

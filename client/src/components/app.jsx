@@ -15,7 +15,7 @@ const App = () => {
           {
             path:"/terms",
             element : <Terms/>
-          },
+          },  
           {
             path:"/risks",
             element:<Risks/>
