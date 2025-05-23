@@ -1,0 +1,69 @@
+
+
+
+.reason1{
+    color: black;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+
+    h1{
+        color: #292944;
+        margin-bottom: 50px;
+    }
+            
+    h3{
+        color: #01a876 ;
+    }
+
+    p{
+        line-height: 1.6;
+    }
+
+    img{
+        width: 50px;
+    }
+
+
+
+    .top{
+
+        .body{
+            display: flex;
+            gap: 30px;
+
+
+
+            .reason{
+
+                
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+         
+            }
+        }
+    }
+
+    .bottom{
+
+        .body{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+
+            .client{
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+            }
+
+          
+        }
+    }
+
+}

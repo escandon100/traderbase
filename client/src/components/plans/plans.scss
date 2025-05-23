@@ -1,0 +1,77 @@
+
+
+
+.accountType{
+    color: black;
+    background-color: #24b371;
+    text-align: center;
+    padding: 50px;
+
+    display: flex;
+    gap: 100px;
+    flex-direction: column ;
+
+
+    
+    .weekly{
+
+
+        .weeklyBody{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+    }
+
+    .monthly{
+
+        .monthlyBody{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 50px;
+        }
+    }
+
+    .plan{
+        background-color: white;
+        border: 1px solid #24b371;
+        border-radius: 10px;
+        padding: 30px 50px ;
+        text-align: center;
+
+        h3{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        ul{
+            text-align: left;
+        }
+
+        li{
+            list-style-type: none;
+            margin-bottom: 20px;
+            
+        }
+
+        button{
+            padding: 15px 30px;
+            background-color: #24b371;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+          
+        }
+    }
+
+
+
+
+
+}

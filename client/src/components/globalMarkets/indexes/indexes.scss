@@ -1,0 +1,49 @@
+
+
+
+
+.indexes{
+
+    color: white;
+
+    table, th , td{
+        border-collapse: separate;
+        border-spacing: 0 10px;
+
+    }
+
+    table{
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+   
+
+        tr{
+
+            .green{
+                color: #46b483;
+                ;
+            }
+            .red{
+                color: #ff676e;
+            }
+
+            &:nth-child(even) {
+                background-color: #282930;
+              }
+
+
+              td{
+                padding: 14px;
+
+              }
+
+
+        }
+
+
+       
+    }
+ 
+
+}
