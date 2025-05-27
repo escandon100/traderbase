@@ -1,20 +1,48 @@
-
+@use "../../../../../styles/responsiveness.scss";
 
 .about{
     display: flex;
     background-color: #242730;
     justify-content: space-around;
+    padding: 50px;
 
+    @include responsiveness.small{
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 15px;
+        justify-content: space-between;
+    }
 
+    h1{
+        margin-bottom: 20px;
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+
+        @include responsiveness.small{
+            font-size: 14px;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+    }
     ul{
         display: flex;
         flex-direction: column;
-        gap: 30px;        
+        gap: 30px;  
+        
+        @include responsiveness.small{
+            gap: 15px;
+        }
+
         li{
             list-style-type: circle;
             color: #01a976;
 
-            .aboutLinks{
+            .tradeLinks{
+
+                @include responsiveness.small{
+                    font-size: 12px;
+                }
 
                 &:hover{
                     text-decoration: underline;
@@ -24,4 +52,7 @@
             
         }
     }
+
+
+
 }

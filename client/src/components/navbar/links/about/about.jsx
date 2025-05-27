@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className='about'>
       <div className="coinCirclePro">
-        <h1><FontAwesomeIcon icon={faBuilding} color='#01a976'/>CoinCircle Pro</h1>
+        <h1><FontAwesomeIcon icon={faBuilding} color='#01a976'/><span>CoinCircle Pro </span></h1>
         <ul>
           <li><Link className="aboutLinks">About us</Link></li>
           <li><Link className="aboutLinks">Contact us</Link></li>

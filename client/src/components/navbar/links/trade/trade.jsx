@@ -11,7 +11,7 @@ const Trade = () => {
     return (
         <div className="trade">
             <div className="tradeTools">
-                <h1><FontAwesomeIcon icon={faCogs}  color='#01a976'/>Trading tools </h1>
+                <h1><FontAwesomeIcon icon={faCogs}  color='#01a976'/><span>Trading tools</span></h1>
                 <ul>
                     <li><Link className='tradeLinks'>Forex</Link></li>
                     <li><Link className='tradeLinks'>Commodity futures</Link></li>

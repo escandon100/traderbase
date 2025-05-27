@@ -11,7 +11,7 @@ const Education = () => {
   return (
     <div className='education'>
       <div className="educationCenter">
-       <h1><FontAwesomeIcon icon={faGraduationCap}  color='#01a976' />Education center </h1>
+       <h1><FontAwesomeIcon icon={faGraduationCap}  color='#01a976' /><span>Education center </span></h1>
         <ul>
           <li><Link className='educationLinks'>Webinars</Link></li>
           <li><Link className='educationLinks'>Calender webinars</Link></li>

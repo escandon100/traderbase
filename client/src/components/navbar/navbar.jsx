@@ -1,100 +1,78 @@
-import { React , useState } from 'react';
-import { Link } from 'react-router';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // fixed import
 import Trade from './links/trade/trade';
 import Education from './links/education/education';
 import About from './links/about/about';
 
-
-import "./navbar.scss";
+import './navbar.scss';
 
 const Navbar = () => {
-
-    const [activeLink , setActiveLink] = useState("")
-    const [trade , setTrade ] = useState(false)
-    const [education , setEducation] = useState(false)
-    const [about , setAbout] = useState(false)
+  const [activeLink, setActiveLink] = useState("");
+  const [open , setOpen] = useState(false)
 
 
-    const handleTrade  = () => {
-        if(activeLink === "trade"){
-            setActiveLink("")
-        }else{
-            setActiveLink("trade")
-        }
-        if(trade == true){
-            setTrade(false)
-        }else{
-            setTrade(true)
-        }
-        
-    }
-    const handleEducation  = () => {
-        if(activeLink === "education"){
-            setActiveLink("")
-        }else{
-            setActiveLink("education")
-        }
-        if(education == true){
-            setEducation(false)
-        }else{
-            setEducation(true)
-        }
-    }
-    const handleAbout  = () => {
-        if(activeLink === "about"){
-            setActiveLink("")
-        }else{
-            setActiveLink("about")
-        }
-        if(about == true){
-            setAbout(false)
-        }else{
-            setAbout(true)
-        }
-        
-    }
+  const toggleSection = (section) => {
+    setActiveLink(prev => (prev === section ? "" : section));
+  };
 
-
-
+  const handleMenu = () => {
+    setOpen(true)
+  }
+  const handleCancel = () => {
+    setOpen(false)
+  }
 
   return (
-    <div className='navbar'>
+    <div className="navbar">
+      <div className="logo">
+        <Link to="/"><img src="logo.png" alt="Logo" /></Link>
+      </div>
+      <div onClick={handleMenu} className={`menuIcon ${open ? "hide" : ""}`}>
+        <Link><img src="menu.png" alt="" /></Link>
+      </div>
+      <div onClick={handleCancel} className={`cancelIcon ${open?"" : "hide"}`}>
+        <Link><img src="cancel.png" alt="" /></Link>
+      </div>
 
-        <div className="logo">
-           <Link to="/"> <img src="logo.png" alt="" /></Link>
-
+      <div className={` links ${open? "activeMenu" : ""}`}>
+        <ul>
+          <li>
+            <Link
+              onClick={() => toggleSection("trade")}
+              className={`link ${activeLink === "trade" ? "active" : ""}`}
+            >
+              TRADE <img className="arrow" src="right-arrow.png" alt="" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => toggleSection("education")}
+              className={`link ${activeLink === "education"   ? "active" : ""}`}
+            >
+              EDUCATION & ANALYTICS <img className="arrow" src="right-arrow.png" alt="" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => toggleSection("about")}
+              className={`link ${activeLink === "about" ? "active" : ""}`}
+            >
+              ABOUT COMPANY <img className="arrow" src="right-arrow.png" alt="" />
+            </Link>
+          </li>
+        </ul>
+        <div className={`linksBody ${open?"activeLinkBody" : ""}`}>
+          {activeLink === "trade" && <Trade/>}
+          {activeLink === "education" && <Education/>}
+          {activeLink === "about" && <About/>}
         </div>
-        <div className="links">
-            <ul>
-                <li><Link onClick={handleTrade} className={`link ${activeLink === "trade" ? "active" : ""}`}>TRADE <img className="arrow" src="right-arrow.png" alt="" /></Link></li>
-                <li><Link onClick={handleEducation} className={`link ${activeLink === "education" ? "active" : ""}`}>EDUCATION & ANALYTICS<img className="arrow" src="right-arrow.png" alt="" /></Link></li>
-                <li><Link onClick={handleAbout}className={`link ${activeLink === "about" ? "active" : ""}`}>ABOUT COMPANY <img  className="arrow" src="right-arrow.png" alt="" /></Link></li>
-            </ul>
-            {trade ? <Trade className="trade"/> : ""}
-            {education ? <Education className="education"/> : ""}
-            {about ? <About className="about"/> : ""}
-
-
-           
-
-        </div>
-
-
-        
-        <div className="account">
-            <div className="registration">
-                <button>OPEN AN ACCOUNT</button>
-            </div>
-            <div className="login">
-                <button>LOGIN</button>
-
-            </div>
-        </div>
-
-       
-      
+      </div>
+        <div className="accountButtons">
+          <button className='registrationButton'>OPEN AN ACCOUNT</button>
+          <button className='loginButton'>LOGIN</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
