@@ -1,0 +1,73 @@
+
+
+
+.tradingSteps{
+    color: black;
+    padding: 50px;
+    text-align: center;
+
+
+    
+
+        .registration{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+
+
+            button{
+
+                padding: 25px 50px;
+                border-radius: 10px;
+
+                &.register{
+                    background-color: #24b371;
+                    border: none;
+                }
+
+
+                &.login{
+                    background-color: white;
+                    border: 3px solid #24b371;
+                }
+            }
+        }
+
+    
+    
+
+
+
+
+    h1{
+        color: black;
+        margin-bottom: 50px;
+    }
+
+
+    .steps{
+        display: flex;
+        justify-content: space-around;
+
+
+        .step{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            width: 20%;
+            margin-bottom: 50px;
+          
+
+            img{
+                width: 150px;
+                margin: auto;
+            }
+        }
+
+
+
+    }
+
+
+}

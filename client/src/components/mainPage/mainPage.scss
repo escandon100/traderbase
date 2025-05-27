@@ -1,0 +1,49 @@
+
+
+.mainPage{
+
+
+
+
+    
+    color: black;
+
+    .slide{
+        padding: 20px;
+
+
+        .slideText{
+            width: 50%;
+        }
+
+        &.slide1{
+            height: 500px;
+            background-image: url("slide1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &.slide2{
+            height: 500px;
+            background-image: url("slide2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+        &.slide3{
+            height: 500px;
+            background-image: url("slide3.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        
+    }
+
+   
+
+
+}

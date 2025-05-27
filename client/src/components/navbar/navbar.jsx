@@ -59,6 +59,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
+
         <div className="logo">
            <Link to="/"> <img src="logo.png" alt="" /></Link>
 

@@ -4,15 +4,6 @@ import "./popular.scss"
 const Popular = () => {
 
 
-  
-      
-          
-          
-          
-
-    
-
-
   return (
 
     <div className='popular'>
