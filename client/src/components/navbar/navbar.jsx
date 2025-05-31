@@ -22,17 +22,28 @@ const Navbar = () => {
     setOpen(false)
   }
 
+
   return (
     <div className="navbar">
       <div className="logo">
         <Link to="/"><img src="logo.png" alt="Logo" /></Link>
       </div>
-      <div onClick={handleMenu} className={`menuIcon ${open ? "hide" : ""}`}>
-        <Link><img src="menu.png" alt="" /></Link>
+      <div className="accountButtonsMobile">
+          <button className='registrationButton'>OPEN AN ACCOUNT</button>
+          <button className='loginButton'>LOGIN</button>
+        </div>
+      <div className="navIcons">
+ 
+        <div onClick={handleMenu} className={`menuIcon ${open ? "hide" : ""}`}>
+          <Link><img src="menu.png" alt="" /></Link>
+        </div>
+        <div onClick={handleCancel} className={`cancelIcon ${open?"" : "hide"}`}>
+          <Link><img src="cancel.png" alt="" /></Link>
+  
+        </div>
+
       </div>
-      <div onClick={handleCancel} className={`cancelIcon ${open?"" : "hide"}`}>
-        <Link><img src="cancel.png" alt="" /></Link>
-      </div>
+    
 
       <div className={` links ${open? "activeMenu" : ""}`}>
         <ul>

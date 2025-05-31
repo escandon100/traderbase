@@ -12,7 +12,7 @@
 
 
     @include responsiveness.small{
-        padding: 5px 15px;
+        padding: 5px 5px;
     }
 
     .logo{
@@ -22,44 +22,103 @@
             @include responsiveness.small{
                 width: 120px;
             }
+            @include responsiveness.medium{
+                width: 150px;
+            }
         }
     }
-    .menuIcon{
+    .accountButtonsMobile{
         display: none;
 
-        &.hide{
-            display: none;
-        }
-
+        
         @include responsiveness.small{
             display: block;
         }
+
         
-        img{
-            width: 30px;
-        }
+        button{
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 12px;
+
+            @include responsiveness.small{
+                padding: 4px 4px;
+                border-radius: 0px;
+
+            }
+
+
+            &.loginButton{
+                background-color: black;
+                border: 1px solid #01a976;
+
+                &:hover{
+                    color: #01a976 ;
+                }
+
+            }
+            &.registrationButton{
+                background-color: #01a976;
+                border: 1px solid #01a976;
+                &:hover{
+                    background-color: #02c087;
+                }
+            }   
+
+
     }
 
-    .cancelIcon{
-        display: block;
+}
+    .navIcons{
 
-        &.hide{
+
+        .menuIcon{
             display: none;
+    
+            &.hide{
+                display: none;
+            }
+    
+            @include responsiveness.small{
+                display: block;
+            }
+            
+            img{
+                width: 30px;
+            }
         }
-        
-        img{
-            width: 30px;
+    
+        .cancelIcon{
+            display: block;
+    
+            &.hide{
+                display: none;
+            }
+            
+            img{
+                width: 30px;
+            }
+    
+    
         }
 
+       
+    
 
     }
-
+   
 
     
     .links{
         width: 45%;
         z-index: 2;
         font-size: 14px;
+
+
+        @include responsiveness.medium{
+            width: 60%;
+        }
 
      
 
@@ -77,6 +136,7 @@
                 z-index: 2;
                 background-color: #1f2025;
                 border-top: 1px solid #01a876;
+                
 
                 & ul{
                     display: flex;
@@ -103,18 +163,8 @@
 
         }
 
-        .linksBody{
-            position: absolute;
-            width: 100%;
-            top: 70px;
-            left: 0;
-            z-index: 3;  
+   
 
-            @include responsiveness.small{
-                top: 35px;
-            }
-
-        }
 
           
         
@@ -123,12 +173,22 @@
             justify-content: space-between;
             list-style: none;
 
+
+            @include responsiveness.medium{
+                justify-content: space-around;
+            }
+
+
             li{
                 .link{
                     
                     display: flex;
                     align-items: center;
                     gap: 5px;
+
+                    @include responsiveness.medium{
+                        font-size: 12px;
+                    }
 
                     &.active{
                         color: #01a876;
@@ -152,6 +212,21 @@
             }
         }
 
+
+        
+        .linksBody{
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            left: 0;
+            z-index: 3;  
+
+            @include responsiveness.small{
+                top: 35px;
+            }
+
+        }
+
     }
     .accountButtons{
         display: flex;
@@ -161,6 +236,10 @@
         @include responsiveness.small{
             display: none;
         }
+
+        @include responsiveness.medium{
+            width: 30%;
+        }
         
 
             button{
@@ -168,7 +247,8 @@
                 border-radius: 5px;
                 padding: 10px;
                 font-size: 12px;
-    
+
+          
     
     
                 &.loginButton{
