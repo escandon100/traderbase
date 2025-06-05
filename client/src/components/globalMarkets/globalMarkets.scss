@@ -1,9 +1,13 @@
-
+@use "../../../styles/responsiveness.scss";
 
 
 .globalMarkets{
 
    display: flex;
+
+   @include responsiveness.small{
+    flex-direction: column;
+   }
 
 
 
@@ -12,8 +16,20 @@
      background-color: #1c1b21;
      padding: 100px 25px 50px 100px;
 
+     @include responsiveness.small{
+        padding: 20px;
+     }
+
+     @include responsiveness.medium{
+        padding: 40px;
+     }
+
      h1{
         margin-bottom: 50px;
+
+        @include responsiveness.small{
+            font-size: 24px;
+        }
      }
 
      ul{
@@ -39,6 +55,10 @@
         margin-top: 30px;
         margin-bottom: 50px;
 
+        @include responsiveness.small{
+
+        }
+
      }
 
      button{
@@ -47,6 +67,11 @@
         padding : 20px;
         border-radius: 10px;
         background-color: #01a976;
+        border: none;
+
+        @include responsiveness.small{
+            font-size: 16px;
+        }
 
         &:hover{
             background-color: #1c1b21;
@@ -66,11 +91,49 @@
     padding: 100px 50px 50px 100px;
     gap: 120px;
 
+    @include responsiveness.small{
+        gap: 50px;
+        padding: 30px;
+    }
+
+    
+    @include responsiveness.medium{
+        padding: 40px;
+        gap: 100px;
+    }
+
+
+
+    h1{
+
+        @include responsiveness.small{
+            font-size: 26px;
+        }
+
+        @include responsiveness.medium{
+            font-size: 30px;
+        }
+
+        
+    
+    }
+
+
 
 
     .advantagesBody{
         font-size: 28px;
         line-height: 1.6;
+
+
+        @include responsiveness.small{
+            font-size: 20px;
+        }
+
+        @include responsiveness.medium{
+            font-size: 22px;
+        }
+
     }
 }
 

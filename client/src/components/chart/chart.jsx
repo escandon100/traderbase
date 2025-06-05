@@ -6,7 +6,7 @@ const Chart = () => {
     <div className="chart">
       <div
         style={{
-          height: "480px",
+          height: "530px",
           backgroundColor: "#FFFFFF",
           overflow: "hidden",
           boxSizing: "border-box",

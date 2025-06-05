@@ -1,3 +1,4 @@
+@use "../../../styles/responsiveness.scss";
 
 .license{
     display: flex;
@@ -6,12 +7,20 @@
     background-color: #1c1b21;
     color: #4a5566;
     padding: 50px 50px 10px 50px;
-    height: 100vh;
+    
+    @include responsiveness.small{
+        padding: 20px;
+    }
 
 
     .top{
         display: flex;
         gap: 235px;
+
+        @include responsiveness.small{
+            gap: 20px;
+            flex-direction: column;
+        }
     
 
         .left{
@@ -19,6 +28,10 @@
 
             img{
                 width: 100%;
+
+                @include responsiveness.small{
+                    width: 100px;
+                }
             }
           
        
@@ -28,6 +41,10 @@
             flex: 8;
             display: flex;
             gap: 10px;
+
+            @include responsiveness.small{
+                flex-direction: column;
+            }
 
             img{
                 width: 25px;

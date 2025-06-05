@@ -1,4 +1,4 @@
-
+@use "../../../../styles/responsiveness.scss";
 
 .futures{
 
@@ -8,12 +8,22 @@
         border-collapse: separate;
         border-spacing: 0 10px;
 
+      
+
     }
 
     table{
         width: 80%;
         text-align: center;
         font-size: 18px;
+
+        @include responsiveness.small{
+            font-size: 16px;
+        }
+
+        @include responsiveness.medium{
+            font-size: 16px;
+        }
    
 
         tr{
@@ -33,6 +43,10 @@
 
               td{
                 padding: 14px;
+
+                @include responsiveness.small{
+                    padding: 10px;
+                }
 
               }
 

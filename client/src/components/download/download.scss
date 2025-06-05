@@ -1,4 +1,4 @@
-
+@use "../../../styles/responsiveness.scss";
 
 .download{
     color: black;
@@ -6,6 +6,20 @@
 
     display: flex;
     gap: 50px;
+
+    
+
+    @include responsiveness.small{
+        flex-direction: column;
+        padding: 20px;
+      
+    }
+
+    @include responsiveness.medium{
+        padding: 20px;
+    }
+
+
 
 
     button{
@@ -22,17 +36,68 @@
 
 
     .left{
-        
+
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding: 50px;
 
+
+        h1{
+            @include responsiveness.small{
+                font-size: 24px;
+            }
+        }
+        
+        p{
+            font-size: 20px;
+            line-height: 2;
+
+            @include responsiveness.small{
+                font-size: 16px;
+            }
+
+            
+        }
+
+        @include responsiveness.small{
+            padding: 20px;
+            gap: 30px;
+        }
+
+        @include responsiveness.medium{
+            padding-left : 10px;
+            padding-right: 0px;
+        }
+
+     
+
+    
 
         .downloadButtons{
             display: flex;
             justify-content: center;
-            gap: 200px;
+            gap: 150px;
             width: 100%;
+
+            @include responsiveness.small{
+                gap: 50px;
+            }
+            @include responsiveness.medium{
+                gap: 50px;
+            }
+
+            img{
+
+                width: 30%;
+
+                @include responsiveness.small{
+                    width: 25%;
+                }
+            
+            }
+
             .desktop{
                 display: flex;
                 gap: 10px;
@@ -61,5 +126,21 @@
 
     .right{
         background-color: #eaecf2;
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        
+
+        img{
+
+            @include responsiveness.small{
+                    width: 100%;
+            }
+
+            @include responsiveness.medium{
+                width: 100%;
+            }
+        }
     }
 }
