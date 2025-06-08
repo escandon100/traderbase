@@ -12,18 +12,22 @@
 
 
     @include responsiveness.small{
-        padding: 5px 5px;
+        padding-right: 20px;
+    }
+
+    @include responsiveness.medium{
+        padding : 10px;
     }
 
     .logo{
         img{
-            width: 180px;
+            width: 200px;
 
             @include responsiveness.small{
                 width: 120px;
             }
             @include responsiveness.medium{
-                width: 150px;
+                width: 140px;
             }
         }
     }
@@ -45,6 +49,7 @@
             @include responsiveness.small{
                 padding: 4px 4px;
                 border-radius: 0px;
+                font-size: 12px;
 
             }
 
@@ -111,15 +116,16 @@
 
     
     .links{
-        width: 45%;
+        width: 500px;
         z-index: 2;
         font-size: 14px;
 
 
         @include responsiveness.medium{
-            width: 60%;
+            width: 50%;
         }
 
+    
      
 
         @include responsiveness.small{
@@ -162,16 +168,17 @@
 
 
         }
-
-   
-
-
-          
         
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style: none;
+
+
+            @include responsiveness.small{
+                justify-content: space-around;
+                padding:0 20px;
+            }
 
 
             @include responsiveness.medium{
@@ -185,6 +192,11 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
+                    font-size: 16px;
+
+                    @include responsiveness.small{
+                        font-size: 12px;
+                    }
 
                     @include responsiveness.medium{
                         font-size: 12px;
@@ -231,7 +243,7 @@
     .accountButtons{
         display: flex;
         justify-content: space-around;
-        width: 20%;
+        width: 300px;
 
         @include responsiveness.small{
             display: none;
@@ -245,12 +257,15 @@
             button{
                 color: white;
                 border-radius: 5px;
-                padding: 10px;
-                font-size: 12px;
+                padding: 12px;
+                font-size: 16px;
 
-          
-    
-    
+                @include responsiveness.medium{
+                    font-size: 14px;
+                    padding: 8px;
+                }
+
+
                 &.loginButton{
                     background-color: black;
                     border: 1px solid #01a976;

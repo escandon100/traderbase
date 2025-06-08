@@ -7,7 +7,7 @@
     text-align: center;
 
     @include responsiveness.small{
-        padding: 10px;
+        padding: 20px;
     }
 
     @include responsiveness.medium{
@@ -17,23 +17,36 @@
     h1{
         color: black;
         margin-bottom: 50px;
+        font-size: 24px;
 
         @include responsiveness.small{
             font-size: 20px;
         }
+        @include responsiveness.medium{
+            font-size: 22px;
+        }
     }
 
     h3{
+        font-size: 22px;
 
         @include responsiveness.small{
-            font-size: 16px;
+            font-size: 18px;
+        }
+         @include responsiveness.medium{
+            font-size: 20px;
         }
     }
     p{
         line-height: 1.6;
+        font-size: 20px;
 
         @include responsiveness.small{
             font-size: 14px;
+        }
+        
+        @include responsiveness.medium{
+            font-size: 16px;
         }
     }
 
@@ -87,11 +100,6 @@
 
 
 
-
-
-
-    
-
         .registration{
             display: flex;
             justify-content: center;
@@ -110,12 +118,13 @@
                 font-size: 20px;
 
                 @include responsiveness.small{
-                    font-size: 12px;
+                    font-size: 14px;
                     padding: 15px;
                 }
 
                 @include responsiveness.medium{
                     padding: 20px;
+                    font-size: 16px;
                 }
 
                 &.register{

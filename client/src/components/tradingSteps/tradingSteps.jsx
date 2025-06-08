@@ -26,7 +26,7 @@ import "./tradingSteps.scss"
                     <div className="step">
                     <img src="mp-step-4.svg" alt="" />
                     <h3>Trade</h3>
-                    <p>Start trading using over 250 different tradi</p>
+                    <p>Start trading using over 250 different trading tools</p>
                     </div>
                 </div>
                 

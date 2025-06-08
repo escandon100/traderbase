@@ -59,7 +59,6 @@ const Reason2 = () => {
 
             <div className="body">
                 <div className="left">
-
                     <div className="heading"><img src="protection-icon1.svg" alt="" /><h3>Investor Compensation Scheme</h3></div>
                     <p>
                     Trader Base FX Company Platform contributes to the US Investor Compensation Scheme, which serves as a limited safety net for certain classes of investors in the event of a participant, such as Trader Base FX Company Platform, becoming insolvent. In such an event, qualifying investors will be eligible for compensation of 90% of their investment, subject to a maximum limit of €20,000. It should be noted that certain categories of clients are not eligible for compensation and these include collective investment schemes, investment firms, credit institutions etc.

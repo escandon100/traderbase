@@ -9,6 +9,7 @@ const Popular = () => {
     <div className='popular'>
 
         <table>
+          <tbody>
             <tr>
               <th>Name</th>
               <th>Bid</th>
@@ -47,12 +48,13 @@ const Popular = () => {
 
       
       
-          <tr>
-              <td>Crude OIL</td>
-              <td>57.95</td>
-              <td>58.01</td>
-              <td className='red'>-0.38%</td>
-          </tr>
+            <tr>
+                <td>Crude OIL</td>
+                <td>57.95</td>
+                <td>58.01</td>
+                <td className='red'>-0.38%</td>
+            </tr>
+          </tbody>
         </table>
 
     </div>

@@ -12,31 +12,30 @@ const License = () => {
             <div className='right'>
                 <h3>REGULATIONS:</h3>
                 <div className='regulations'>
-                <div className='regulation'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>Licensed by MFSA</p>
-                </div>
-                <div className='regulation'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>MIFID Compliant</p>
-                </div>
-                <div className='regulation small'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>FCA</p>
-                </div>
-                <div className='regulation small'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>BaFin</p>
-                </div>
-                <div className='regulation small'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>AMF</p>
-                </div>
-                <div className='regulation small'>
-                  <img src="license-approved.svg" alt="" />
-                  <p>CONSOB</p>
-                </div>
-
+                    <div className='regulation'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>Licensed by MFSA</p>
+                    </div>
+                    <div className='regulation'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>MIFID Compliant</p>
+                    </div>
+                    <div className='regulation small'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>FCA</p>
+                    </div>
+                    <div className='regulation small'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>BaFin</p>
+                    </div>
+                    <div className='regulation small'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>AMF</p>
+                    </div>
+                    <div className='regulation small'>
+                    <img src="license-approved.svg" alt="" />
+                    <p>CONSOB</p>
+                    </div>
                 </div>
                
             </div>
@@ -73,7 +72,7 @@ const License = () => {
              </div>
             <div className="second-row">
                 <div className="left">
-                    <h3>CORPORATE GOVERNANCE & BANKING</h3>
+                    <h3>CORPORATE GOVERNANCE & BANKING:</h3>
                 </div>
                 <div className="right">
                     <img src="pwc.svg" alt="" />
@@ -97,7 +96,7 @@ const License = () => {
 
             <p>Trader Base FX Company Platform. provides its services to all global citizens. 
                 Copyright © 2015 - 2022 Trader Base FX Company Platform.. All Rights Reserved.
-            <Link className="terms-conditions"to="terms"> Terms and Conditions</Link> |<Link to="/risks" className='risk-disclosure'>Risk Disclosure</Link>   * Prices displayed on the website may be affected by changes in currency exchange rate and price movements thereby affecting your investment return therefrom. Trader Base FX Company Platform is incorporated in US, 31 Beeston Road, Nottingham | Company Registration Number: IS/560000 MFSA License Number: IS/560000.
+            <Link className="terms-conditions"to="terms"> Terms and Conditions</Link>|<Link to="/risks" className='risk-disclosure'>Risk Disclosure</Link>   * Prices displayed on the website may be affected by changes in currency exchange rate and price movements thereby affecting your investment return therefrom. Trader Base FX Company Platform is incorporated in US, 31 Beeston Road, Nottingham | Company Registration Number: IS/560000 MFSA License Number: IS/560000.
                         </p>
         </div>
       

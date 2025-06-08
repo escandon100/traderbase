@@ -9,12 +9,13 @@ const Forex = () => {
     <div className='forex'>
 
     <table>
+      <tbody>
         <tr>
           <th>Name</th>
           <th>Bid</th>
           <th>Ask</th>
           <th>Change</th>
-       </tr>
+        </tr>
         <tr>
             <td>EUR/JPY	</td>
             <td>122.535</td>
@@ -36,19 +37,20 @@ const Forex = () => {
             <td className='green'>0.22%</td>
         </tr>
     
-      <tr>
+        <tr>
           <td> GBP/USD</td>
           <td>1.30291</td>
           <td>1.30308</td>
           <td className='green'>	0.08%</td>
-      </tr>
+        </tr>
   
-      <tr>
+         <tr>
           <td>USD/JPY</td>
           <td>109.887</td>
           <td>109.9</td>
           <td className='red'>-0.10%</td>
-      </tr>
+         </tr>
+      </tbody>
     </table>
 
 </div>

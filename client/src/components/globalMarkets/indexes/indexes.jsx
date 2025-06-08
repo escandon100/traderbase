@@ -7,6 +7,7 @@ const Indexes = () => {
   return (
     <div className='indexes'>
     <table>
+      <tbody>
         <tr>
           <th>Name</th>
           <th>Bid</th>
@@ -31,18 +32,19 @@ const Indexes = () => {
             <td>7631.65</td>
             <td className='red'>-0.03%</td>
         </tr>
-      <tr>
-          <td>US30</td>
-          <td>29071.5</td>
-          <td>29074.5	</td>
-          <td className='green'>0.32%</td>
-      </tr>
-      <tr>
-          <td>NASDAQ100</td>
-          <td>9044.29	</td>
-          <td>9046.09</td>
-          <td className='red'>-0.07%</td>
-      </tr>
+        <tr>
+            <td>US30</td>
+            <td>29071.5</td>
+            <td>29074.5	</td>
+            <td className='green'>0.32%</td>
+        </tr>
+        <tr>
+            <td>NASDAQ100</td>
+            <td>9044.29	</td>
+            <td>9046.09</td>
+            <td className='red'>-0.07%</td>
+        </tr>
+       </tbody>
     </table>
 
 </div>

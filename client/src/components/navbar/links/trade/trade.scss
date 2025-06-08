@@ -15,7 +15,7 @@
 
     h1{
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 22px;
         display: flex;
         gap: 10px;
 
@@ -37,11 +37,16 @@
         li{
             list-style-type: circle;
             color: #01a976;
+            font-size: 20px;
+
 
             .tradeLinks{
 
                 @include responsiveness.small{
                     font-size: 12px;
+                }
+                @include responsiveness.medium{
+                    font-size: 16px;
                 }
 
                 &:hover{
