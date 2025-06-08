@@ -29,7 +29,7 @@
         } 
 
         .left{
-            flex: 1;
+            flex: 1;    
             
             @include responsiveness.medium{
                 display: none;
@@ -41,7 +41,7 @@
 
 
                 @include responsiveness.small{
-                    width: 50%
+                    width: 30%;
                 }
               
 
@@ -55,6 +55,7 @@
             align-items: center;
 
             @include responsiveness.small{
+              align-items: flex-start;
                flex: none;
                flex-direction: column;
             }
@@ -69,7 +70,7 @@
                 font-size: 20px;
             
                 @include responsiveness.small{
-                    font-size: 10px;
+                    font-size: 12px;
                     flex: 0.2;
                 }
                 @include responsiveness.medium{
@@ -172,7 +173,7 @@
                 font-size: 20px;
                 
                 @include responsiveness.small{
-                    flex: 1.3;
+                    flex: 2;
                     font-size: 10px;
                 }
 
@@ -192,6 +193,7 @@
 
                 @include responsiveness.small{
                    width: 100%;
+                   flex :3.5;
                 }
 
                 @include responsiveness.medium{

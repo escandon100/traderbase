@@ -40,6 +40,7 @@
             @include responsiveness.small{
                 flex-direction: column;
                 gap: 30px;
+                padding: 20px;
             }
 
 
@@ -71,11 +72,14 @@
                 flex-direction: column;
                 margin-top: 20px;
                 gap: 30px;
+                padding: 20px;
+                
             }
 
             @include responsiveness.medium{
                 flex-wrap: wrap;
                 gap: 50px;
+                padding: 20px;
              
            }
 
@@ -90,6 +94,9 @@
         padding: 30px 30px ;
         text-align: center;
 
+     
+
+  
 
 
 
