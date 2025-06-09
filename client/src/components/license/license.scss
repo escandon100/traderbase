@@ -173,7 +173,7 @@
                 font-size: 20px;
                 
                 @include responsiveness.small{
-                    flex: 2;
+                    flex: 2.5;
                     font-size: 10px;
                 }
 
@@ -193,7 +193,7 @@
 
                 @include responsiveness.small{
                    width: 100%;
-                   flex :3.5;
+                   flex :3.8;
                 }
 
                 @include responsiveness.medium{
