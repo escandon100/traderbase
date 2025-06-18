@@ -8,7 +8,6 @@ import TradingSteps from '../tradingSteps/tradingSteps'
 import Download from '../download/download'
 import MainPage from '../mainPage/mainPage'
 import Chart from '../chart/chart'
-import EarningsPopup from '../earningsPopup/earningsPopup'
 
 const Homepage = () => {
   return (
@@ -56,7 +55,6 @@ const Homepage = () => {
           ></iframe>
         </div>
       </div>
-       <EarningsPopup/>
        <MainPage/>
         <Reason1/>
         <Plans/>

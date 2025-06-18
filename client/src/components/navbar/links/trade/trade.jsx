@@ -13,16 +13,16 @@ const Trade = () => {
             <div className="tradeTools">
                 <h1><FontAwesomeIcon icon={faCogs}  color='#01a976'/><span>Trading tools</span></h1>
                 <ul>
-                    <li><Link className='tradeLinks'>Forex</Link></li>
-                    <li><Link className='tradeLinks'>Commodity futures</Link></li>
-                    <li><Link className='tradeLinks'>Share indexes</Link></li>
-                    <li><Link className='tradeLinks'>Energy carriers</Link></li>
+                    <li><Link to="/forexLink" className='tradeLinks'>Forex</Link></li>
+                    <li><Link to="/futuresLink" className='tradeLinks'>Commodity futures</Link></li>
+                    <li><Link to="/indexesLink" className='tradeLinks'>Share indexes</Link></li>
+                    <li><Link to="/carriersLink"  className='tradeLinks'>Energy carriers</Link></li>
                 </ul>
             </div>
             <div className="tradeAccount">
                 <h1><FontAwesomeIcon icon={faCreditCard} color='#01a976'/>Trading account </h1>
                 <ul>
-                    <li><Link className='tradeLinks'>Payment methods</Link></li>
+                    <li><Link to="/payment" className='tradeLinks'>Payment methods</Link></li>
                     <li><Link className='tradeLinks'>Withdrawal information and General fees</Link></li>
                 </ul>
 

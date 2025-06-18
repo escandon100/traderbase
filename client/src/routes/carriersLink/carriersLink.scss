@@ -1,0 +1,153 @@
+
+
+
+.carriersLinkNav{
+    padding: 20px 300px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    gap: 5px;
+
+    .link{
+        display: flex;
+        gap : 5px ;
+        color : #01a876;
+
+        P{
+            font-size: 20px;
+          
+        }
+
+        & .icon{
+            font-size: 20px;
+        }
+
+    }
+
+    span{
+        color: #4a5566 ;
+        font-size: 20px;
+    }
+}
+
+
+
+.carriersLink{
+    color : black;
+    display: flex;
+    padding: 50px 300px;
+    gap: 50px;
+
+
+    .main{
+
+        flex : 4 ;
+
+        display : flex;
+        flex-direction: column;
+        gap: 50px;
+
+        h1{
+            font-size: 36PX;
+        }
+
+        h3{
+            font-size: 28px;
+        }
+
+        P{
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a5566;
+        }
+
+         table{
+            width : 100%;
+            text-align: left;
+            border-collapse: collapse;
+
+            tr{
+                border: 1px solid #e7ebf1;
+
+                th{
+                    background-color: #e7ebf1;
+                    padding: 10px;
+                  }
+                td{
+                    padding: 10px;
+
+                  }
+
+            }
+         }
+
+          button{
+            display: flex;
+            width: 500px;
+            align-self: center;
+            justify-content: center;
+            color: #fff;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #01a976;
+            text-align: left;
+
+
+            &:hover{
+                background-color: #fff;
+                border: 2px solid #01a976;
+
+                & h1{
+
+                    & .icon{
+                        color: #01a876;
+                    }
+                }
+
+                & div{
+                    color: #01a876;
+
+                    & p{
+                        color: #01a876;
+                    }
+                }
+            }
+
+            p{
+                color: #fff;
+            }
+
+
+            h1{
+                font-size: 52px;
+            
+            }
+         
+         
+         }
+
+        
+
+    }
+
+    .side{
+
+        flex : 1;
+
+        h3{
+            font-size: 28px;
+        }
+
+        ul{
+            list-style-type: none;
+
+            li{
+                margin : 40px 10px ;
+                font-size: 20px;
+
+            }
+        }
+
+    }
+}

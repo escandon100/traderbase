@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // fixed import
+import { Link } from 'react-router-dom'; 
 import Trade from './links/trade/trade';
 import Education from './links/education/education';
 import About from './links/about/about';
@@ -48,7 +48,8 @@ const Navbar = () => {
       <div className={` links ${open? "activeMenu" : ""}`}>
         <ul>
           <li>
-            <Link
+            <Link 
+              to="#"
               onClick={() => toggleSection("trade")}
               className={`link ${activeLink === "trade" ? "active" : ""}`}
             >
@@ -57,6 +58,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="#"
               onClick={() => toggleSection("education")}
               className={`link ${activeLink === "education"   ? "active" : ""}`}
             >
@@ -65,6 +67,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="#"
               onClick={() => toggleSection("about")}
               className={`link ${activeLink === "about" ? "active" : ""}`}
             >

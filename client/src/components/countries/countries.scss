@@ -1,0 +1,15 @@
+@use "../../../styles/responsiveness.scss";
+
+
+
+.countries{
+    text-align: left;
+
+   .select{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        border-bottom: 2px solid grey;
+    }
+}
