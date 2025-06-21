@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router"
 import "./tradingSteps.scss"
 
 
@@ -31,8 +32,8 @@ import "./tradingSteps.scss"
                 </div>
                 
             <div className="registration">
-                <button className="register">OPEN LIVE ACCOUNT</button>
-                <button className="login">LOGIN ACCOUNT</button>
+                <Link className='button registerButton' to="/register">OPEN LIVE ACCOUNT</Link>    
+                <Link className='button loginButton' to="/login">LOGIN ACCOUNT</Link>    
             </div>
          
 

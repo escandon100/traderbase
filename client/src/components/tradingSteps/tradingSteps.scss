@@ -111,7 +111,7 @@
             }
 
 
-            button{
+            .button{
 
                 padding: 30px;
                 border-radius: 10px;
@@ -127,13 +127,13 @@
                     font-size: 16px;
                 }
 
-                &.register{
+                &.registerButton{
                     background-color: #24b371;
                     border: none;
                 }
 
 
-                &.login{
+                &.loginButton{
                     background-color: white;
                     border: 3px solid #24b371;
                 }

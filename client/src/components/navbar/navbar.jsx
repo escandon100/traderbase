@@ -76,14 +76,14 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={`linksBody ${open?"activeLinkBody" : ""}`}>
-          {activeLink === "trade" && <Trade/>}
-          {activeLink === "education" && <Education/>}
-          {activeLink === "about" && <About/>}
+          {activeLink === "trade" && <Trade closeMenu={()=> {setActiveLink("")}}/>}
+          {activeLink === "education" && <Education closeMenu={()=> {setActiveLink("")}} />}
+          {activeLink === "about" && <About closeMenu={()=> {setActiveLink("")}} />}
         </div>
       </div>
         <div className="accountButtons">
-          <button className='registrationButton'>OPEN AN ACCOUNT</button>
-          <button className='loginButton'>LOGIN</button>
+          <Link to="/register" className='button registrationButton'>OPEN AN ACCOUNT</Link>
+          <Link to="/login" className='button loginButton'>LOGIN</Link>
       </div>
     </div>
   );

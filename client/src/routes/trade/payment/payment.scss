@@ -1,0 +1,139 @@
+@use "../../../../styles/responsiveness.scss";
+
+.paymentNav{
+
+    padding: 20px 300px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    gap: 5px;
+
+    .link {
+        display: flex;
+        gap: 5px;
+        color: #01a876;
+
+        P {
+            font-size: 20px;
+
+        }
+
+        & .icon {
+            font-size: 20px;
+        }
+
+    }
+
+    span {
+        color: #4a5566;
+        font-size: 20px;
+    }
+}
+
+h1 {
+    color: black;
+}
+
+
+
+.payment {
+    color: black;
+    display: flex;
+    padding: 50px 300px;
+    gap: 50px;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        flex: 4;
+
+        .paymentMethods {
+            display: flex;
+            gap: 50px;
+
+            .paymentMethod {
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                flex: 1;
+
+                .accordion {
+                    padding: 30px;
+                    box-shadow: 0px 0px 10px black;
+                    border-radius: 10px;
+
+                    &:hover {
+                        box-shadow: 0px 0px 20px black;
+
+                    }
+
+                    .typography {
+                        display: flex;
+                        gap: 50px;
+                        align-items: center;
+
+                        .mainText {
+                            font-size: 24px;
+                            width: 100%;
+                            border-left: 1px solid #4a5566;
+                            padding-left: 30px;
+                        }
+
+                        .mainImg {
+                            height: 70px;
+                            width: 70px;
+                        }
+
+
+
+                    }
+
+                    .accordionDetails {
+                        color: #4a5566;
+                        line-height: 1.5;
+                        font-size: 18px;
+                    }
+
+                    .depositButton {
+                        display: flex;
+                        gap: 10px;
+                        font-size: 24px;
+
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+
+
+
+    .side {
+
+        flex: 1;
+
+        h3 {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                margin: 40px 10px;
+                font-size: 20px;
+                background-color: #d4d5e0;
+                border-left: 4px solid #555866;
+                padding: 10px 30px;
+
+            }
+        }
+
+    }
+}

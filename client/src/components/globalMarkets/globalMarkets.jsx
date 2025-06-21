@@ -1,9 +1,10 @@
 import { React , useState } from "react"
+import { Link } from "react-router"
 import "./globalMarkets.scss"
-import Popular from "./popular/popular"
-import Forex from "./forex/forex"
-import Futures from "./futures/futures"
-import Indexes from "./indexes/indexes";
+import PopularMarket from "./popularMarket/popularMarket"
+import ForexMarket from "./forexMarket/forexMarket"
+import FuturesMarket from "./futuresMarket/futuresMarket"
+import IndexesMarket from "./indexesMarket/indexesMarket"
 
 
 
@@ -14,13 +15,13 @@ const GlobalMarkets = () => {
   const renderTab = () => {
     switch (activeTab) {
       case "popular":
-        return <Popular />;
+        return <PopularMarket />;
       case "forex":
-        return <Forex />;
+        return <ForexMarket />;
       case "futures":
-        return <Futures />;
+        return <FuturesMarket />;
       case "indexes":
-        return <Indexes />;
+        return <IndexesMarket />;
       default:
         return null;
     }
@@ -54,7 +55,7 @@ const GlobalMarkets = () => {
             <div className="main">
               {renderTab()}
             </div>
-            <button>OPEN LIVE ACCOUNT</button>
+            <Link className='button' to="/register">OPEN LIVE ACCOUNT</Link>    
 
         </div>
         <div className="advantages">

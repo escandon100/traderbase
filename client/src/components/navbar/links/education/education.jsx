@@ -7,21 +7,21 @@ import { faLineChart } from '@fortawesome/free-solid-svg-icons'
 
 import "./education.scss"
 
-const Education = () => {
+const Education = ({closeMenu}) => {
   return (
     <div className='education'>
       <div className="educationCenter">
        <h1><FontAwesomeIcon icon={faGraduationCap}  color='#01a976' /><span>Education center </span></h1>
         <ul>
-          <li><Link className='educationLinks'>Webinars</Link></li>
-          <li><Link className='educationLinks'>Calender webinars</Link></li>
-          <li><Link className='educationLinks'>E-book</Link></li>
+          <li><Link to="/webinars"  onClick = {closeMenu}  className='educationLinks'>Webinars</Link></li>
+          <li><Link to="/calender"  onClick = {closeMenu} className='educationLinks'>Calender webinars</Link></li>
+          <li><Link to="/ebook"  onClick = {closeMenu} className='educationLinks'>E-book</Link></li>
         </ul>
       </div>
       <div className="analytics">
         <h1><FontAwesomeIcon icon={faLineChart}  color='#01a976' /><span>Analytics</span></h1>
           <ul>
-           <li><Link className='educationLinks'>Trader advices</Link></li>
+           <li><Link to="/advices"  onClick = {closeMenu} className='educationLinks'>Trader advices</Link></li>
           </ul>
       </div>
       <div className="educationAndAnalytics">

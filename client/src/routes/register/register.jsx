@@ -22,7 +22,7 @@ const Register = () => {
         </div>
       
         <label htmlFor="">Email</label>
-        <input type="email" />
+        <input type="email" placeholder='name@example.com' />
         <label htmlFor="">Phone Number</label>
         <input type="text" />
         <div className="names">
@@ -33,7 +33,7 @@ const Register = () => {
          
           <div className="name">
             <label htmlFor="">Confirm Password</label>
-            <input type="password" /> 
+            <input  type="password" /> 
           </div>
       
         </div>

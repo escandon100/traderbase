@@ -1,5 +1,6 @@
 import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router";
 import {  EffectFade ,Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -32,8 +33,7 @@ const MainPage = () => {
                             <img src="regulation-ns.png" alt="" />
                             <img src="regulation-eu.png" alt="" />
                         </div>
-                      
-                        <button>JOIN NOW</button>
+                        <Link to="/register" className="button">Join Now</Link>
                     </div>
                 </div>
             </SwiperSlide>
@@ -42,7 +42,8 @@ const MainPage = () => {
                     <div className="slideText">
                         <h1>Trade Mining | Forex anytime , anywhere</h1>
                         <h3>MORE THAN 100 ASSETS AVAILABLE FOR TRADING</h3>
-                        <button>JOIN NOW</button>
+                       <Link to="/register" className="button">Join Now</Link>
+
                     </div>
                 </div>
             </SwiperSlide>
@@ -52,8 +53,8 @@ const MainPage = () => {
                         <h1>Smart investments start with a strong foundation</h1>
                         <h3>LEARN THE ROPES WITH OUR TEAM OF FINANCIAL EXPERTS</h3>
                         <h1>Live webinars , video tutorials , ebooks and professional tools</h1>
-                        <button>JOIN NOW</button>
-                    </div> 
+                        <Link to="/register" className="button">Join Now</Link>
+                   </div> 
                 </div>
             </SwiperSlide>
             </Swiper>

@@ -19,7 +19,7 @@ const Plans = () => {
                     <li> Duration: 1 Week</li>
                     <li> Type: Short Time</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
                 </div>
             <div className="deluxe plan">
                 <h3>DELUXE</h3>
@@ -31,7 +31,7 @@ const Plans = () => {
                     <li> Duration: 1 Week</li>
                     <li> Type: Short Time</li>
                 </ul>
-            <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
@@ -45,7 +45,7 @@ const Plans = () => {
                     <li> Duration: 1 Week</li>
                     <li> Type: Short Time</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
             </div>
             <div className="gold plan">
@@ -58,7 +58,7 @@ const Plans = () => {
                     <li> Duration: 1 Week</li>
                     <li> Type: Short Time</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
@@ -80,7 +80,7 @@ const Plans = () => {
                     <li> Daily Signals</li>
                     <li> Financial Plan</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
@@ -94,7 +94,7 @@ const Plans = () => {
                     <li> Daily Signals</li>
                     <li> Financial Plan</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
                 
             </div>
@@ -109,7 +109,7 @@ const Plans = () => {
                     <li> Financial Plan</li>
                 </ul>
 
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
@@ -124,7 +124,7 @@ const Plans = () => {
                     <li> Financial Plan</li>
                 </ul>  
 
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
  
 
             </div>
@@ -139,7 +139,7 @@ const Plans = () => {
                     <li> Financial Plan</li>
                 </ul>
 
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
@@ -153,7 +153,7 @@ const Plans = () => {
                     <li> Daily Signals</li>
                     <li> Financial Plan</li>
                 </ul>
-                <Link><button>SUBSCRIBE</button></Link>    
+                <Link className='button' to="/login">SUBSCRIBE</Link>    
 
 
             </div>
