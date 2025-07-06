@@ -1,16 +1,15 @@
 import React from 'react'
-import "./first.scss"
+import "./mainlist.scss"
 
 const First = () => {
   return (
-    <div>
-        <h2>1.INTERPRETATION</h2>
-            <h3>“APPLICABLE REGULATIONS” means</h3>
-            <p>MFSA Rules or any other rules of a relevant regulatory authority; and all other applicable laws, rules and regulations as in force from time to time.</p>
+    <div className='mainlist'>
+            <h2>1.INTERPRETATION</h2>
+            <p>“APPLICABLE REGULATIONS” means MFSA Rules or any other rules of a relevant regulatory authority; and all other applicable laws, rules and regulations as in force from time to time.</p>
             <p>“ASSOCIATE” means an undertaking in the same group as us, a representative whom we or an undertaking in the same group as us appoint, or any other person with whom we have a relationship that might reasonably be expected to give rise to a community of interest between us and them.</p>
             <p>“BASE CURRENCY” means US Dollars.</p>
             <p>“BUSINESS DAY” means a day which is not a Saturday or a Sunday and upon which banks are open for business in US.</p>
-            “CLIENT MONEY RULES” means the rules specified in Standard License Conditions 2.86-2.93 of the Investment Services Rules issued by MFSA and the Investment Services Act (Control of Assets) Regulations – Legal Notice 24 of 1998 as amended and the Directives and Circulars issued pursuant these Rules and Regulations, as amended from time to time by MFSA.
+            <p>“CLIENT MONEY RULES” means the rules specified in Standard License Conditions 2.86-2.93 of the Investment Services Rules issued by MFSA and the Investment Services Act (Control of Assets) Regulations – Legal Notice 24 of 1998 as amended and the Directives and Circulars issued pursuant these Rules and Regulations, as amended from time to time by MFSA.</p>
             <p>“CONTRACT FOR DIFFERENCES” or “CFD” means the financial instrument specified in paragraph of the Second Schedule of the Investment Services Act.</p>
             <p>“CREDIT SUPPORT PROVIDER” means any person who has entered into any guarantee, pledge, hypothecation, agreement, margin or security agreement in our favor in respect of your obligations under this Agreement.</p>
             <p>“ELECTRONIC SERVICES” means a service provided by us, for example an Internet trading service offering clients access to information and trading facilities, via an internet service, a WAP service and/or an electronic order routing system.</p>

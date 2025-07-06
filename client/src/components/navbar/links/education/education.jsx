@@ -11,10 +11,10 @@ const Education = ({closeMenu}) => {
   return (
     <div className='education'>
       <div className="educationCenter">
-       <h1><FontAwesomeIcon icon={faGraduationCap}  color='#01a976' /><span>Education center </span></h1>
+       <h1><FontAwesomeIcon icon={faGraduationCap} color='#01a976' /><span>Education center </span></h1>
         <ul>
           <li><Link to="/webinars"  onClick = {closeMenu}  className='educationLinks'>Webinars</Link></li>
-          <li><Link to="/calender"  onClick = {closeMenu} className='educationLinks'>Calender webinars</Link></li>
+          <li><Link to="/calendar"  onClick = {closeMenu} className='educationLinks'>Calender webinars</Link></li>
           <li><Link to="/ebook"  onClick = {closeMenu} className='educationLinks'>E-book</Link></li>
         </ul>
       </div>

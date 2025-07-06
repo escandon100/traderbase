@@ -16,10 +16,10 @@ import Spreads from '../routes/trade/spreads/spreads'
 import Swaps from '../routes/trade/swaps/swaps'
 import Hours from '../routes/trade/hours/hours'
 import Webinars from '../routes/education/webinars/webinars'
-import Calender from '../routes/education/calender/calender'
+import CalendarPage from '../routes/education/calendar/calendar'
 import Ebook from '../routes/education/ebook/ebook'
 import Advices from '../routes/education/advices/advices'
-import About from './navbar/links/about/about'
+import AboutPage from '../routes/about/about/aboutPage'
 import Contact from '../routes/about/contact/contact'
 import Affiliate from '../routes/about/affiliate/affiliate'
 import Regulation from '../routes/about/regulation/regulation'
@@ -97,8 +97,8 @@ const App = () => {
             element : <Webinars/>
           },
           {
-            path : "/calender",
-            element : <Calender/>
+            path : "/calendar",
+            element : <CalendarPage/>
           },
           {
             path : "/ebook",
@@ -110,7 +110,7 @@ const App = () => {
           },
           {
             path : "/about",
-            element : <About/>
+            element : <AboutPage/>
           },
           {
             path : "/contact",

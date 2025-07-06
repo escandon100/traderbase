@@ -21,6 +21,7 @@
         display: flex;
         gap: 50px;
         align-items: center;
+        
 
 
         @include responsiveness.small{
@@ -103,7 +104,8 @@
                 width: 30%;
                 font-weight: 500;
                 font-size: 18px;
-                gap: 5px;   
+                gap: 5px;  
+                padding: 0px; 
 
                 @include responsiveness.medium{
                     font-size: 16px;
