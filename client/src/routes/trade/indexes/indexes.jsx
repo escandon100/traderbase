@@ -40,7 +40,6 @@ const Indexes = () => {
                                 <th>Leverage</th>
                                 <th>Contract Size</th>
                                 <th>Min. Trade	</th>
-                                <th>ECN Min. Trade</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,8 +49,8 @@ const Indexes = () => {
                                 <td>2</td>
                                 <td>1:20</td>
                                 <td>1 Contract</td>
-                                <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                  
+                                <td>0.01 </td>  
+                                                               
                             </tr>
                                <tr>
                                 <td>CAC40</td>
@@ -59,8 +58,8 @@ const Indexes = () => {
                                 <td>1.3</td>
                                  <td>1:20</td>
                                 <td>1 Contract</td>
-                                 <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                    
+                                 <td>0.01 </td>  
+                                                                 
                             </tr>
                                <tr>
                                 <td>DAX30</td>
@@ -68,8 +67,8 @@ const Indexes = () => {
                                 <td>1.5</td>
                                  <td>1:20</td>
                                 <td>1 Contract</td>
-                                <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                     
+                                <td>0.01 </td>  
+                                                                  
                             </tr>
                                <tr>
                                 <td>FTSE100</td>
@@ -77,8 +76,8 @@ const Indexes = () => {
                                 <td>1.3</td>
                                  <td>1:20</td>
                                 <td>1 Contract</td>
-                                 <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                
+                                 <td>0.01 </td>  
+                                                             
                             </tr>
                                <tr>
                                 <td>JPN225</td>
@@ -86,8 +85,8 @@ const Indexes = () => {
                                 <td>8</td>
                                 <td>1:20</td>
                                 <td>1 Contract</td>
-                                <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                 
+                                <td>0.01 </td>  
+                                                            
                             </tr>
                                <tr>
                                 <td>USA100</td>
@@ -95,8 +94,7 @@ const Indexes = () => {
                                 <td>1</td>
                                  <td>1:20</td>
                                 <td>1 Contract</td>
-                                <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                  
+                                <td>0.01</td>                              
                             </tr>
                                <tr>
                                 <td>USA30</td>
@@ -104,8 +102,7 @@ const Indexes = () => {
                                 <td>3</td>
                                 <td>1:20</td>
                                 <td>1 Contract</td>
-                                <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                                   
+                                <td>0.01</td>  
                             </tr>
                                <tr>
                                 <td>USA500</td>
@@ -113,8 +110,7 @@ const Indexes = () => {
                                 <td>1</td>
                                <td>1:20</td>
                                 <td>1 Contract</td>
-                                 <td>0.01 Lot</td>  
-                                <td>0.01 Lot</td>                               
+                                 <td>0.01</td>  
                             </tr>
                         </tbody>
 
@@ -124,7 +120,6 @@ const Indexes = () => {
                             <h1><FontAwesomeIcon className="icon" icon={faLineChart}/></h1>
                             <div>
                                 <h3>START TRADING NOW</h3>
-                                <p>Demo account is available for safe trading</p>
                             </div>
                     
                         </button>
@@ -133,10 +128,10 @@ const Indexes = () => {
                 <div className="side">
                     <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="/forexLink">Forex</Link></li>
-                        <li><Link to="/futuresLink">Commodity futures</Link></li>
-                        <li><Link to="/indexesLink">Share indexes</Link></li>
-                        <li><Link to="/carriersLink">Energy carriers</Link></li>
+                        <li><Link to="/forex">Forex</Link></li>
+                        <li><Link to="/futures">Commodity futures</Link></li>
+                        <li className="indexesClicked"><Link to="/indexes">Share indexes</Link></li>
+                        <li><Link to="/carriers">Energy carriers</Link></li>
                     </ul>
                 </div>
                 

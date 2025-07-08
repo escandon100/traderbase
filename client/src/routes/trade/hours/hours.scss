@@ -3,38 +3,59 @@
 
 .hoursNav{
 
-    padding: 20px 300px;
+     padding: 20px 300px;
     box-shadow: 0px 0px 10px black;
     display: flex;
     gap: 5px;
 
-    .link {
-        display: flex;
-        gap: 5px;
-        color: #01a876;
+    @include responsiveness.small{
+        padding: 10px;
+    }
 
-        P {
+
+    .link{
+        display: flex;
+        gap : 5px ;
+        color : #01a876;
+
+        P{
             font-size: 20px;
 
+            @include responsiveness.small{
+                font-size: 14px;
+            }
+          
         }
 
-        & .icon {
+        & .icon{
             font-size: 20px;
+
+            @include responsiveness.small{
+                font-size: 14px;
+            }
         }
 
     }
 
-    span {
-        color: #4a5566;
+    span{
+        color: #4a5566 ;
         font-size: 20px;
+
+        @include responsiveness.small{
+            font-size: 14px;
+        }
     }
 }
 
 .hours{
-          color : black;
+        color : black;
         display: flex;
         padding: 50px 300px;
         gap: 50px;
+
+         @include responsiveness.small{
+            padding: 50px 10px;
+        }
 
   
         .main{
@@ -42,6 +63,12 @@
         display : flex;
         flex-direction: column;
         gap: 50px;
+
+          @include responsiveness.small{
+            width: 100%;
+            flex: none;
+            gap: 30px;
+        }
 
             
     
@@ -51,17 +78,34 @@
             font-size: 18px;
             line-height: 1.6;
             color: #4a5566;
+
+             @include responsiveness.small{
+                font-size: 14px;
+            }
+        }
+        h3{
+            font-size: 28px;
+
+            @include responsiveness.small{
+                font-size: 22px;
+            }
         }
 
 
         h1 {
              color: black;
+
+              @include responsiveness.small{
+                font-size: 24px;
+            }
         }    
         
         ol{
                counter-reset: my-counter;
                 list-style: none;
                 padding: 0;
+
+           
 
             li{
                 counter-increment: my-counter;
@@ -70,6 +114,11 @@
                 margin: 20px 0;
                 font-size: 18px;
                  color: #4a5566;
+
+                 @include responsiveness.small{
+                    font-size: 14px;
+                    padding-left: 30px;
+                 }
 
 
                 &::before{
@@ -86,6 +135,14 @@
                         line-height: 30px;
                         font-weight: bold;
                         font-size: 18px;
+
+
+                        @include responsiveness.small{
+                            font-size: 12px;
+                            line-height: 15px;
+                            width: 15px;
+                            height: 15px;
+                        }
                 }
 
             }

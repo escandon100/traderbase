@@ -7,6 +7,15 @@
     display: flex;
     gap: 5px;
 
+  
+    @include responsiveness.small{
+        padding: 10px;
+    }
+
+    @include responsiveness.medium{
+        padding: 20px;
+    }
+
     .link{
         display: flex;
         gap : 5px ;
@@ -14,11 +23,28 @@
 
         P{
             font-size: 20px;
+
+             @include responsiveness.small{
+                font-size: 14px;
+            }
+
+               @include responsiveness.medium{
+                font-size: 16px;
+            }
+          
           
         }
 
         & .icon{
             font-size: 20px;
+
+            @include responsiveness.small{
+                font-size: 14px;
+            }
+
+               @include responsiveness.medium{
+                font-size: 16px;
+            }
         }
 
     }
@@ -26,6 +52,13 @@
     span{
         color: #4a5566 ;
         font-size: 20px;
+
+          @include responsiveness.small{
+            font-size: 14px;
+        }
+          @include responsiveness.medium{
+            font-size: 16px;
+        }
     }
 }
 
@@ -37,27 +70,65 @@
     padding: 50px 300px;
     gap: 50px;
 
+    @include responsiveness.small{
+        padding:10px;
+    }
+    @include responsiveness.medium{
+        padding: 20px;
+        gap: 20px;
+    }
+
 
     .main{
 
         flex : 4 ;
-
         display : flex;
         flex-direction: column;
         gap: 50px;
 
+        @include responsiveness.small{
+            width: 100%;
+            flex: none;
+            gap: 20px;
+        }
+        @include responsiveness.medium{
+            flex: 2.5;
+            gap: 30px;
+        }
+
         h1{
             font-size: 36PX;
+
+            @include responsiveness.small{
+                font-size: 20px;
+            }
+            @include responsiveness.medium{
+                font-size: 24px;
+            }
         }
 
         h3{
             font-size: 28px;
+
+               @include responsiveness.small{
+                font-size: 16px;
+            }
+            @include responsiveness.medium{
+                font-size: 20px;
+            }
         }
 
         P{
             font-size: 18px;
             line-height: 1.6;
             color: #4a5566;
+
+             @include responsiveness.small{
+                font-size: 14px;
+            }
+            @include responsiveness.medium{
+                font-size: 16px;
+            }
         }
 
          table{
@@ -71,16 +142,36 @@
                 th{
                     background-color: #e7ebf1;
                     padding: 10px;
+
+
+                        @include responsiveness.small{
+                        font-size: 10px;
+                        padding:  5px;
+                    }
+                      @include responsiveness.medium{
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+
+
                   }
                 td{
                     padding: 10px;
+                    @include responsiveness.small{
+                        font-size: 10px;
+                        padding: 5px;
+                    }
+                       @include responsiveness.medium{
+                        font-size: 14px;
+                        padding: 10px;
+                    }
 
                   }
 
             }
          }
 
-          button{
+         button{
             display: flex;
             width: 500px;
             align-self: center;
@@ -92,6 +183,16 @@
             border: none;
             background-color: #01a976;
             text-align: left;
+
+            @include responsiveness.small{
+                width: 300px;
+                padding: 15px;
+            }
+
+            @include responsiveness.medium{
+                width: 400px;
+                padding: 25px;
+            }
 
 
             &:hover{
@@ -105,23 +206,36 @@
                     }
                 }
 
-                & div{
+                & h3{
                     color: #01a876;
-
-                    & p{
-                        color: #01a876;
-                    }
                 }
             }
 
-            p{
-                color: #fff;
-            }
+      
 
 
             h1{
                 font-size: 52px;
+                color: #fff;
+
+                @include responsiveness.small{
+                    font-size: 22px;
+                }
+
+                @include responsiveness.medium{
+                    font-size: 24px;
+                }
             
+            }
+
+            h3{
+
+                @include responsiveness.small{
+                    font-size: 18px;
+                }
+                @include responsiveness.medium{
+                    font-size: 20px;
+                }
             }
          
          
@@ -135,8 +249,16 @@
 
         flex : 1;
 
+          @include responsiveness.small{
+                display: none;
+            }
+
         h3{
             font-size: 28px;
+
+             @include responsiveness.medium{
+                font-size: 22px;
+            }
         }
 
         ul{
@@ -145,6 +267,19 @@
             li{
                 margin : 40px 10px ;
                 font-size: 20px;
+
+                   &.carriersClicked{
+                    background-color: #d4d5e0;
+                    border-left: 4px solid #555866;
+                    padding: 10px;
+                    color: #666973;
+
+                }
+
+                 @include responsiveness.medium{
+                    margin: 25px 5px;
+                    font-size: 16px;
+                }
 
             }
         }

@@ -26,7 +26,7 @@ const Swaps = () => {
                <div className="side">
                     <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="#">Swaps</Link></li>
+                        <li className='swapsClicked'><Link to="#">Swaps</Link></li>
                         
                     </ul>
                 </div>

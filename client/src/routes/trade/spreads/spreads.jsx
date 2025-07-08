@@ -36,7 +36,7 @@ const Spreads = () => {
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="#">Spreads</Link></li>
+                    <li className='spreadsClicked'><Link to="#">Spreads</Link></li>
                     
                 </ul>
             </div>

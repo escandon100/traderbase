@@ -36,55 +36,40 @@ const Futures = () => {
                     					
                     <tr>
                         <th>Instrument</th>
-                        <th>SSpread</th>
-                        <th>ECN Spread</th>
+                        <th>Spread</th>
                         <th>Leverage</th>
-                        <th>ECN Leverage</th>
                         <th>Contract Size</th>
                         <th>Min. Trade</th>
-                        <th>ECN Min. Trade</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>GOLD: XAUEUR</td>
                         <td>60</td>
-                        <td>50</td>
-                        <td>1:50</td>
                         <td>1:50</td>
                         <td>100	</td>
-                        <td>0.1 Lots</td>
-                        <td>0.1 Lots</td>
+                        <td>0.1</td>
                     </tr>
                     <tr>
                         <td>GOLD: XAUUSD</td>
                         <td>60</td>
-                        <td>50</td>
-                        <td>1:50</td>
                         <td>1:50</td>
                         <td>100	</td>
-                        <td>0.1 Lots</td>
-                        <td>0.1 Lots</td>
+                        <td>0.1 </td>
                     </tr>
                     <tr>
                         <td>SILVER: XAGEUR</td>
                         <td>5</td>
-                        <td>4</td>
-                        <td>1:50</td>
                         <td>1:50</td>
                         <td>100</td>
-                        <td>0.1 Lots</td>
-                        <td>0.1 Lots</td>
+                        <td>0.1 </td>
                     </tr>
                     <tr>
                         <td>SILVER: XAGUSD</td>
                         <td>5</td>
-                        <td>4</td>
-                        <td>1:50</td>
                         <td>1:50</td>
                         <td>100</td>
-                        <td>0.1 Lots</td>
-                        <td>0.1 Lots</td>
+                        <td>0.1 </td>
                     </tr>
                     
                 </tbody>
@@ -93,7 +78,6 @@ const Futures = () => {
                 <h1><FontAwesomeIcon className="icon" icon={faLineChart}/></h1>
                 <div>
                     <h3>START TRADING NOW</h3>
-                    <p>Demo account is available for safe trading</p>
                 </div>
 
             </button>
@@ -102,10 +86,10 @@ const Futures = () => {
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="/forexLink">Forex</Link></li>
-                    <li><Link to="/futuresLink">Commodity futures</Link></li>
-                    <li><Link to="/indexesLink">Share indexes</Link></li>
-                    <li><Link to="/carriersLink">Energy carriers</Link></li>
+                    <li><Link to="/forex">Forex</Link></li>
+                    <li className="futuresClicked"><Link to="/futures">Commodity futures</Link></li>
+                    <li><Link to="/indexes">Share indexes</Link></li>
+                    <li><Link to="/carriers">Energy carriers</Link></li>
                 </ul>
             </div>
             

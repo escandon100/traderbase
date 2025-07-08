@@ -161,7 +161,7 @@ const Withdrawal = () => {
                 <div className="side">
                     <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="#">Withdrawal information and general fees</Link></li>
+                        <li className='futuresClicked'><Link to="#">Withdrawal information and general fees</Link></li>
                         
                     </ul>
                 </div>

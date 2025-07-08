@@ -7,6 +7,7 @@ import { faLineChart } from '@fortawesome/free-solid-svg-icons'
 import "./forex.scss"
 
 const Forex = () => {
+     
     return (
         <>
         <div className="forexNav">
@@ -406,7 +407,6 @@ const Forex = () => {
                 <h1><FontAwesomeIcon className="icon" icon={faLineChart}/></h1>
                 <div>
                     <h3>START TRADING NOW</h3>
-                    <p>Demo account is available for safe trading</p>
                 </div>
 
             </button>
@@ -415,10 +415,10 @@ const Forex = () => {
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="/forexLink">Forex</Link></li>
-                    <li><Link to="/futuresLink">Commodity futures</Link></li>
-                    <li><Link to="/indexesLink">Share indexes</Link></li>
-                    <li><Link to="/carriersLink">Energy carriers</Link></li>
+                    <li className="forexClicked"><Link to="/forex">Forex</Link></li>
+                    <li><Link to="/futures">Commodity futures</Link></li>
+                    <li><Link to="/indexes">Share indexes</Link></li>
+                    <li><Link to="/carriers">Energy carriers</Link></li>
                 </ul>
             </div>
             

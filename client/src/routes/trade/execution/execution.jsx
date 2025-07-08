@@ -8,13 +8,13 @@ const Execution= () =>{
     return ( 
      <>
         <div className="executionNav">
-            <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566"/><p>Main</p></Link><span>/ Payment methods</span>
+            <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566"/><p>Main</p></Link><span>/ Order Execution</span>
                   
         </div>
         <div className="execution">
             <div className="main">
                 <h1>EXECUTION OF ORDERS</h1>
-                <p>eqtradesendeavors to give merchants quick execution of requests with costs that are not in a general sense not quite the same as those expressed.
+                <p>Trader base endeavor to give merchants quick execution of requests with costs that are not in a general sense not quite the same as those expressed.
                     Execution of requests is completed in two different ways:</p>
 
                     <ol>
@@ -28,7 +28,7 @@ const Execution= () =>{
                 <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="#">Order execution</Link></li>
+                    <li className='executionClicked'><Link to="#">Order execution</Link></li>
                     
                 </ul>
             </div>

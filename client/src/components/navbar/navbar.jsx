@@ -35,10 +35,10 @@ const Navbar = () => {
       <div className="navIcons">
  
         <div onClick={handleMenu} className={`menuIcon ${open ? "hide" : ""}`}>
-          <Link><img src="menu.png" alt="" /></Link>
+          <Link to="#"><img src="menu.png" alt="" /></Link>
         </div>
         <div onClick={handleCancel} className={`cancelIcon ${open?"" : "hide"}`}>
-          <Link><img src="cancel.png" alt="" /></Link>
+          <Link to="#"><img src="cancel.png" alt="" /></Link>
   
         </div>
 

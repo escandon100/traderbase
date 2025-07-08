@@ -41,7 +41,7 @@ const Carriers = () => {
                                 <th>ECN Spread</th>
                                 <th>Leverage</th>
                                 <th>Contract Size</th>
-                                <th>ECN Min. Trade</th>
+                                <th>Min. Trade</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,8 +51,7 @@ const Carriers = () => {
                                 <td>3</td>
                                 <td>1:10</td>
                                 <td>100</td>
-                                <td>0.1 Lots</td>
-                                <td>0.1 Lots</td>
+                                <td>0.1</td>
                             </tr>
                             <tr>
                                 <td>USOIL</td>
@@ -60,17 +59,13 @@ const Carriers = () => {
                                 <td>3</td>
                                 <td>1:10</td>
                                 <td>100</td>
-                                <td>0.1 Lots</td>
-                                <td>0.1 Lots</td>
+                                <td>0.1 </td>
                             </tr>
                         </tbody>
                     </table>
                     <button>
                         <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
-                        <div>
-                            <h3>START TRADING NOW</h3>
-                            <p>Demo account is available for safe trading</p>
-                        </div>
+                        <h3>START TRADING NOW</h3>
 
                     </button>
 
@@ -78,10 +73,10 @@ const Carriers = () => {
                 <div className="side">
                     <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="/forexLink">Forex</Link></li>
-                        <li><Link to="/futuresLink">Commodity futures</Link></li>
-                        <li><Link to="/indexesLink">Share indexes</Link></li>
-                        <li><Link to="/carriersLink">Energy carriers</Link></li>
+                        <li><Link to="/forex">Forex</Link></li>
+                        <li><Link to="/futures">Commodity futures</Link></li>
+                        <li><Link to="/indexes">Share indexes</Link></li>
+                        <li className="carriersClicked"><Link to="/carriers">Energy carriers</Link></li>
                     </ul>
                 </div>
 

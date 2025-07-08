@@ -166,7 +166,7 @@ const Payment = () => {
             <div className="side">
                    <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="/payment">Payment methods</Link></li>
+                        <li className="paymentClicked"><Link to="/payment">Payment methods</Link></li>
                         
                     </ul>
 
