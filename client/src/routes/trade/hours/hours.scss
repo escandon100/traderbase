@@ -3,13 +3,17 @@
 
 .hoursNav{
 
-     padding: 20px 300px;
+   padding: 20px 30px;
     box-shadow: 0px 0px 10px black;
     display: flex;
     gap: 5px;
 
     @include responsiveness.small{
         padding: 10px;
+    }
+
+    @include responsiveness.medium{
+        padding: 20px;
     }
 
 
@@ -19,19 +23,25 @@
         color : #01a876;
 
         P{
-            font-size: 20px;
+            font-size: 18px;
 
             @include responsiveness.small{
                 font-size: 14px;
+            }
+            @include responsiveness.medium{
+                font-size: 16px;
             }
           
         }
 
         & .icon{
-            font-size: 20px;
+            font-size: 18px;
 
             @include responsiveness.small{
                 font-size: 14px;
+            }
+            @include responsiveness.medium{
+                font-size: 16px;
             }
         }
 
@@ -39,10 +49,13 @@
 
     span{
         color: #4a5566 ;
-        font-size: 20px;
+        font-size: 18px;
 
         @include responsiveness.small{
             font-size: 14px;
+        }
+          @include responsiveness.medium{
+            font-size: 16px;
         }
     }
 }
@@ -50,23 +63,32 @@
 .hours{
         color : black;
         display: flex;
-        padding: 50px 300px;
-        gap: 50px;
+        padding: 30px;
+        gap: 30px;
 
-         @include responsiveness.small{
-            padding: 50px 10px;
-        }
+     @include responsiveness.small{
+        padding:10px;
+        
+    }
+    @include responsiveness.medium{
+        padding:20px;
+        gap: 20px;
+    }
 
   
-        .main{
+    .main{
         flex : 4 ;
         display : flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
 
-          @include responsiveness.small{
+        @include responsiveness.small{
             width: 100%;
             flex: none;
+            gap: 20px;
+        }
+          @include responsiveness.medium{
+            flex: 2.5;
             gap: 30px;
         }
 
@@ -79,23 +101,33 @@
             line-height: 1.6;
             color: #4a5566;
 
-             @include responsiveness.small{
+            @include responsiveness.small{
                 font-size: 14px;
+            }
+            @include responsiveness.medium{
+                font-size: 16px;
             }
         }
         h3{
-            font-size: 28px;
+            font-size: 24px;
 
             @include responsiveness.small{
-                font-size: 22px;
+                font-size: 16px;
+            }
+            @include responsiveness.medium{
+                font-size: 20px;
             }
         }
 
 
         h1 {
              color: black;
+             font-size: 26px;
 
-              @include responsiveness.small{
+            @include responsiveness.small{
+                font-size: 20px;
+            }
+            @include responsiveness.medium{
                 font-size: 24px;
             }
         }    
@@ -110,14 +142,19 @@
             li{
                 counter-increment: my-counter;
                 position: relative;
-                padding-left: 40px;
+                padding-left: 30px;
                 margin: 20px 0;
                 font-size: 18px;
                  color: #4a5566;
+                 line-height: 1.6;
 
                  @include responsiveness.small{
                     font-size: 14px;
-                    padding-left: 30px;
+                    padding-left: 20px;
+                 }
+                 @include responsiveness.medium{
+                    font-size: 16px;
+                    padding-left: 25px;
                  }
 
 
@@ -125,23 +162,26 @@
                       content: counter(my-counter);
                         position: absolute;
                         left: 0;
-                        top: 0;
-                        width: 30px;
-                        height: 30px;
+                        top: 3px;
+                        width: 20px;
+                        height: 20px;
                         background-color: #01a976;
                         color: white;
                         border-radius: 50%;
                         text-align: center;
-                        line-height: 30px;
+                        line-height: 20px;
                         font-weight: bold;
-                        font-size: 18px;
+                        font-size: 14px;
 
 
                         @include responsiveness.small{
-                            font-size: 12px;
+                            font-size: 10px;
                             line-height: 15px;
                             width: 15px;
                             height: 15px;
+                        }
+                      @include responsiveness.medium{
+                            font-size: 12px;
                         }
                 }
 
@@ -150,13 +190,18 @@
         }
 
 
+
     }
     .side {
 
         flex: 1;
 
         h3 {
-            font-size: 28px;
+            font-size: 24px;
+
+            @include responsiveness.medium{
+                font-size: 22px;
+            }
         }
 
         ul {
@@ -165,10 +210,19 @@
             li {
                 margin: 40px 10px;
                 font-size: 20px;
-                background-color: #d4d5e0;
-                border-left: 4px solid #555866;
-                padding: 10px 30px;
-                color: #666973;
+
+                 &.hoursClicked{
+                    background-color: #d4d5e0;
+                    border-left: 4px solid #555866;
+                    padding: 10px;
+                    color: #666973;
+
+                }
+
+                @include responsiveness.medium{
+                    margin: 25px 5px;
+                    font-size: 16px;
+                }
 
             }
         }

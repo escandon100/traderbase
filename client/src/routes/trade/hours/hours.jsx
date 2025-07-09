@@ -46,7 +46,7 @@ const Hours = () => {
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="#">Trading hours</Link></li>
+                    <li className='hoursClicked'><Link to="#">Trading hours</Link></li>
                     
                 </ul>
                 

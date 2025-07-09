@@ -2,12 +2,11 @@
 
 .paymentNav{
 
-    padding: 20px 300px;
+   padding: 20px 30px;
     box-shadow: 0px 0px 10px black;
     display: flex;
     gap: 5px;
 
-  
     @include responsiveness.small{
         padding: 10px;
     }
@@ -16,33 +15,31 @@
         padding: 20px;
     }
 
+
     .link{
         display: flex;
         gap : 5px ;
         color : #01a876;
 
         P{
-            font-size: 20px;
-
-             @include responsiveness.small{
-                font-size: 14px;
-            }
-
-               @include responsiveness.medium{
-                font-size: 16px;
-            }
-          
-          
-        }
-
-        & .icon{
-            font-size: 20px;
+            font-size: 18px;
 
             @include responsiveness.small{
                 font-size: 14px;
             }
+            @include responsiveness.medium{
+                font-size: 16px;
+            }
+          
+        }
 
-               @include responsiveness.medium{
+        & .icon{
+            font-size: 18px;
+
+            @include responsiveness.small{
+                font-size: 14px;
+            }
+            @include responsiveness.medium{
                 font-size: 16px;
             }
         }
@@ -51,9 +48,9 @@
 
     span{
         color: #4a5566 ;
-        font-size: 20px;
+        font-size: 18px;
 
-          @include responsiveness.small{
+        @include responsiveness.small{
             font-size: 14px;
         }
           @include responsiveness.medium{
@@ -69,8 +66,8 @@
 .payment {
     color: black;
     display: flex;
-    padding: 50px 300px;
-    gap: 50px;
+    padding: 30px;
+    gap: 30px;
 
 
    @include responsiveness.small{
@@ -84,7 +81,7 @@
     .main {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
         flex: 4;
 
 
@@ -100,7 +97,7 @@
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 26px;
              color: black;
 
 
@@ -115,7 +112,7 @@
 
         .paymentMethods {
             display: flex;
-            gap: 50px;
+            gap: 30px;
 
             @include responsiveness.small{
                 gap: 20px;
@@ -128,7 +125,7 @@
             .paymentMethod {
                 display: flex;
                 flex-direction: column;
-                gap: 100px;
+                gap: 50px;
                 flex: 1;
 
                 @include responsiveness.small{
@@ -139,7 +136,7 @@
                 }
 
                 .accordion {
-                    padding: 30px;
+                    padding: 15px;
                     box-shadow: 0px 0px 10px black;
                     border-radius: 10px;
 
@@ -157,18 +154,17 @@
 
                     .typography {
                         display: flex;
-                        gap: 50px;
+                        gap: 15px;
                         align-items: center;
 
                         @include responsiveness.small{
                             gap: 10px;
                         }
-                        @include responsiveness.medium{
-                            gap: 10px;
-                        }
+                       
 
                         .mainText {
-                            font-size: 24px;
+                            gap: 10px;
+                            font-size: 18px;
                             width: 100%;
                             border-left: 1px solid #4a5566;
                             padding-left: 30px;
@@ -218,7 +214,7 @@
                     .depositButton {
                         display: flex;
                         gap: 10px;
-                        font-size: 24px;
+                        font-size: 18px;
 
                         
 
@@ -261,7 +257,7 @@
 
 
         h3 {
-            font-size: 28px;
+            font-size: 24px;
 
             @include responsiveness.medium{
                 font-size: 22px;
@@ -273,7 +269,7 @@
 
             li{
                 margin : 40px 10px ;
-                font-size: 20px;
+                font-size: 18px;
 
                    &.paymentClicked{
                     background-color: #d4d5e0;
