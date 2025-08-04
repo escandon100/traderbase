@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import authRoutes from './routes/auth.js';
 import adminRoutes from './routes/admin.js'; 
 import emailRoutes from './routes/email.js';
+import registerRoutes from "./routes/register.js";
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/email', emailRoutes);
+app.use("/api/register", registerRoutes)
 
 
 app.listen(5000, () => console.log(`Server running on port 5000`));
