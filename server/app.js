@@ -19,6 +19,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/email', emailRoutes);
 app.use("/api/register", registerRoutes)
+app.use("/api/auth" , loginRoutes)
 
 
 app.listen(5000, () => console.log(`Server running on port 5000`));

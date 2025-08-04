@@ -3,7 +3,7 @@ import { createBrowserRouter , RouterProvider } from 'react-router'
 import Layout from './layout/layout'
 import Homepage from './homepage/homepage'
 import Register from '../routes/register/register'
-import Login from '../routes/login/login'
+import UserLogin from '../routes/userLogin/userLogin'
 import Forex from "../routes/trade/forex/forex"
 import Carriers from '../routes/trade/carriers/carriers'
 import Futures from '../routes/trade/futures/futures'
@@ -32,6 +32,7 @@ import Information from '../routes/about/information/information'
 import Conflict from '../routes/about/conflict/conflict'
 import AdminLogin from '../routes/adminLogin/adminLogin'
 import AdminDashboard from '../routes/adminDashboard/adminDashboard'
+import UserDashboard from '../routes/userDashboard/userDashboard'
 
 
 
@@ -163,8 +164,8 @@ const App = () => {
         element:<Register/>
       },
       {
-        path:"/login",
-        element:<Login/>
+        path:"/userLogin",
+        element:<UserLogin/>
       },
       {
         path : "/passwordReset",
@@ -177,6 +178,11 @@ const App = () => {
       {
         path : "/adminDashboard",
         element : <AdminDashboard/>
+      },
+      {
+        path : "/userDashboard",
+        element : <UserDashboard/>
+
       }
     
   
