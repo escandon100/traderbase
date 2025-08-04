@@ -11,8 +11,6 @@ const Ebook = () => {
         <>
             <div className="ebookNav">
                 <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566"/><p>Main</p></Link><span>/ Ebook</span>
-
-               
             </div>
 
         
@@ -23,7 +21,6 @@ const Ebook = () => {
                     <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
                     <div>
                         <h3>START TRADING NOW</h3>
-                        <p>Demo account is available for safe trading</p>
                     </div>
             
                     </button>
@@ -34,7 +31,7 @@ const Ebook = () => {
                 <ul>
                     <li><Link to="/webinars">Webinars</Link></li>
                     <li><Link to="/calendar">Calendar Webinars</Link></li>
-                    <li><Link to="/ebook">Ebook</Link></li>
+                    <li className='ebookClicked'><Link to="/ebook">Ebook</Link></li>
                 </ul>
             </div>
 

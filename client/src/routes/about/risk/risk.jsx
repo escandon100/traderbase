@@ -113,7 +113,7 @@ const Risk = () => {
          <div className="side">
           <h3>Trading tools</h3>
           <ul>
-              <li><Link to="#">Terms & Conditions</Link></li>
+              <li className='riskClicked'><Link to="#">Risk Disclosure</Link></li>
               
           </ul>
         </div>

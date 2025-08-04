@@ -22,7 +22,6 @@ const Advices = () => {
                     <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
                     <div>
                         <h3>START TRADING NOW</h3>
-                        <p>Demo account is available for safe trading</p>
                     </div>
                 </button>
 

@@ -9,7 +9,7 @@ const Conflict = () => {
     return ( 
         <>
         <div className="conflictNav">
-            <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566"/><p>Main</p></Link><span>/ Webinars</span>
+            <Link className="link" to="/"><FontAwesomeIcon className="icon" icon={faHome} color="#4a5566"/><p>Main</p></Link><span>/ Conflict of Interest</span>
 
         </div>
         <div className="conflict">
@@ -37,12 +37,11 @@ const Conflict = () => {
                 </p>
             </div>
             <div className="side">
-                    <h3>Trading tools</h3>
-                    <ul>
-                        <li><Link to="#">Conflict of Interest</Link></li>
-                      
-                    </ul>
-                </div>
+                <h3>Trading tools</h3>
+                <ul>
+                    <li className='conflictClicked'><Link to="#">Conflict of Interest</Link></li>
+                </ul>
+            </div>
 
         </div>
 

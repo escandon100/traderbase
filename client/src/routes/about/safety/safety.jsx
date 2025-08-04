@@ -30,7 +30,7 @@ const Safety = () => {
                       <div className="side">
                         <h3>Trading tools</h3>
                         <ul>
-                            <li><Link to="#">Safety of Funds</Link></li>
+                            <li className='safetyClicked'><Link to="#">Safety of Funds</Link></li>
                             
                         </ul>
                     </div>

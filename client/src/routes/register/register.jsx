@@ -1,50 +1,85 @@
-import React from 'react';
-import { Link } from 'react-router';
-import Countries from "../../components/countries/countries"
-import "./register.scss"
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import './register.scss';
+import countries from "../../lib/countries"
 
 const Register = () => {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    password: '',
+    confirmPassword: '',
+    country: '',
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('http://localhost:5000/api/email/send', form);
+      alert('Form sent to your email!');
+    } catch (error) {
+      alert('Failed to send form.');
+    }
+  };
+
   return (
     <div className='register'>
-      <img src="logo.png" alt="" srcset="" />
-      <form action="">
+      <img src='logo.png' alt='' />
+      <form onSubmit={handleSubmit}>
         <h1>Create an Account</h1>
-        <div className="names">
-          <div className="name">
-            <label htmlFor="">First Name</label>
-            <input type="text" />             
-          </div>          
-            <div className="name">
-            <label htmlFor="">Last Name</label>
-             <input type="text" /> 
+        <div className='names'>
+          <div className='name'>
+            <label>First Name</label>
+            <input type='text' name='firstName' onChange={handleChange} required />
+          </div>
+          <div className='name'>
+            <label>Last Name</label>
+            <input type='text' name='lastName' onChange={handleChange} required />
+          </div>
+        </div>
 
+        <label>Email</label>
+        <input type='email' name='email' placeholder='name@example.com' onChange={handleChange} required />
+
+        <label>Phone Number</label>
+        <input type='text' name='phone' onChange={handleChange} required />
+
+        <div className='names'>
+          <div className='name'>
+            <label>Password</label>
+            <input type='password' name='password' onChange={handleChange} required />
+          </div>
+          <div className='name'>
+            <label>Confirm Password</label>
+            <input type='password' name='confirmPassword' onChange={handleChange} required />
           </div>
         </div>
-      
-        <label htmlFor="">Email</label>
-        <input type="email" placeholder='name@example.com' />
-        <label htmlFor="">Phone Number</label>
-        <input type="text" />
-        <div className="names">
-          <div className="name">
-             <label htmlFor="">Password</label>
-            <input type="password" /> 
-          </div>
-         
-          <div className="name">
-            <label htmlFor="">Confirm Password</label>
-            <input  type="password" /> 
-          </div>
-      
-        </div>
-        <Countries/>
-        <button type="submit">Register</button>
-        <p>Already have an account <Link to="/login" className='link'>Login</Link></p>
-        <p>© Copyright 2025   Trader Base FX   All Rights Reserved.</p>
+
+        <label>Country</label>
+        <select name="country" value={form.country} onChange={handleChange} required>
+      <option value="">Choose Country</option>
+      {countries.map((country) => (
+        <option key={country} value={country}>{country}</option>
+      ))}
+        </select>
+
+
+        <button type='submit'>Register</button>
+        <p>
+          Already have an account? <Link to='/login'>Login</Link>
+        </p>
+        <p>© Copyright 2025 Trader Base FX All Rights Reserved.</p>
       </form>
-      
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;

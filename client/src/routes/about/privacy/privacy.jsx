@@ -42,7 +42,7 @@ const Privacy = ()  => {
                 <div className="side">
                     <h3>Trading tools</h3>
                     <ul>
-                        <li><Link to="#">Privacy Policy</Link></li>
+                        <li className='privacyClicked'><Link to="#">Privacy Policy</Link></li>
                         
                     </ul>
                 </div>

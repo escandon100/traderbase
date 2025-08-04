@@ -72,7 +72,7 @@ const Terms = () => {
         <div className="side">
           <h3>Trading tools</h3>
           <ul>
-              <li><Link to="#">Terms & Conditions</Link></li>
+              <li className='termsClicked'><Link to="#">Terms & Conditions</Link></li>
               
           </ul>
         </div>

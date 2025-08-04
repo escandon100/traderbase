@@ -28,8 +28,10 @@ import Privacy from '../routes/about/privacy/privacy'
 import Safety from '../routes/about/safety/safety'
 import Risk from '../routes/about/risk/risk'
 import Terms from '../routes/about/terms/terms'
-import Information from '../routes/about/information/informatio'
+import Information from '../routes/about/information/information'
 import Conflict from '../routes/about/conflict/conflict'
+import AdminLogin from '../routes/adminLogin/adminLogin'
+import AdminDashboard from '../routes/adminDashboard/adminDashboard'
 
 
 
@@ -154,9 +156,6 @@ const App = () => {
           }
        
        
-   
-         
-
         ]
       },
      {
@@ -170,6 +169,14 @@ const App = () => {
       {
         path : "/passwordReset",
         element : <PasswordReset/>
+      },
+      {
+        path : "/adminLogin",
+        element : <AdminLogin/>
+      },
+      {
+        path : "/adminDashboard",
+        element : <AdminDashboard/>
       }
     
   

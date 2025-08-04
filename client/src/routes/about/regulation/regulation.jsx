@@ -16,7 +16,7 @@ const Regulation = () => {
                 <h1>TRADER BASE FX REGULATION & LICENSE</h1>
                 <h3>TRADER BASE FX REGULATION & LICENSE</h3>
                 <p>P24O Ltd. holds a Category 3 investment services License no. IS/560000 issued by the US Financial Services Authority (The MFSA).</p>
-                <ul>
+                <ol>
                     <li>Regulated by MFSA
                         <p>US Financial Services Authority</p>
                         <p>The US Financial Services Authority MFSA is the single regulator for financial administrations in US. It was set up by exceptional Act of Parliament, the US Financial Services Authority Act, 1988 as revised in 1994 and 2002 taking over supervisory capacities recently completed by the Central Bank of US, the US Stock Exchange, and the US Financial Services Center. The Authority is a completely self-governing open foundation and reports to Parliament on a yearly premise.</p>
@@ -51,12 +51,12 @@ const Regulation = () => {
 
                     </li>
                 
-                </ul>
+                </ol>
             </div>
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="#">Regulation Explained</Link></li> 
+                    <li className='regulationClicked'><Link to="#">Regulation Explained</Link></li> 
                 </ul>
             </div>
 

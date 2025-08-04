@@ -74,7 +74,6 @@ const AboutPage = () => {
                     <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
                     <div>
                         <h3>START TRADING NOW</h3>
-                        <p>Demo account is available for safe trading</p>
                     </div>
              
                 </button>
@@ -83,7 +82,7 @@ const AboutPage = () => {
             <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="/about">About Us</Link></li>
+                    <li className='aboutClicked'><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/affiliate">Affiliate Program</Link></li>
                 </ul>

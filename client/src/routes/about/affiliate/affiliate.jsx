@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router";
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faLineChart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./affiliate.scss"
@@ -26,17 +26,18 @@ const Affiliate = () => {
                 <p>In case you are keen on our offer, pursue the connection and complete the enlistment procedure. Spot our flags on your site and begin winning witheqtrades.</p>
                 <p>Traders can likewise move toward becoming accomplices of theeqtrades. Bring your companions and get additional assets and rewards into your trading account!</p>
                 <button>
-                    <h1><FontAwesomeIcon className="icon" icon={faLineChart} /></h1>
-                      <h3>BECOME A PARTNER NOW</h3>
-                                        
+                    <h1><FontAwesomeIcon className="icon" icon={faHandshake}/></h1>
+                        <div>
+                            <h3>BECOME A PARTNER NOW</h3>
+                        </div>                   
                 </button>
             </div>
              <div className="side">
                 <h3>Trading tools</h3>
                 <ul>
-                    <li><Link to="/about">About Us</Link></li>
+                    <li ><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
-                    <li><Link to="/affiliate">Affiliate Program</Link></li>
+                    <li className='affiliateClicked'><Link to="/affiliate">Affiliate Program</Link></li>
             </ul>
             </div>
         </div>

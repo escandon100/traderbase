@@ -33,7 +33,7 @@ const Verification = () => {
            <div className="side">
                    <h3>Trading tools</h3>
                    <ul>
-                       <li><Link to="#">Account Verification Documents</Link></li>
+                       <li className='verificationClicked'><Link to="#">Account Verification Documents</Link></li>
                    </ul>
             </div>
         </div>
