@@ -13,11 +13,11 @@ const traderbasesInputSchema = new mongoose.Schema({
   lastName: String,
   email: { type: String, unique: true },
   phone: String,
-  password: String, // Ideally hash this before saving
+  password: String, 
   country: String,
 });
 
-const traderbasesInput  = mongoose.model("traderbasesInput",traderbasesInputSchema)
+export const traderbasesInput  = mongoose.model("traderbasesInput",traderbasesInputSchema)
 
 
 router.post('/send', async (req, res) => {
