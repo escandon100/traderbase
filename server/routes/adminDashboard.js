@@ -1,5 +1,5 @@
 import { Router } from "express"
-import verifyAdmin from "../middleware/adminAuth.js"
+import verifyAdmin from "../middleware/adminAuthentication.js"
 
 const router = Router()
 

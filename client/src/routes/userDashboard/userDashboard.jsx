@@ -27,10 +27,15 @@ const UserDashboard = () => {
           }
           )
           .catch(() => {
-            localStorage.removeItem('admin-token');
-            window.location.href = '/adminLogin';
+            localStorage.removeItem('user-token');
+            window.location.href = '/userLogin';
           });
       }, []);
+
+        const handleLogout = () => {
+    localStorage.removeItem('user-token');
+    window.location.href = '/userLogin';
+        };
 
         if(loading) return null;
 
@@ -38,6 +43,8 @@ const UserDashboard = () => {
     return(
         <div className="userDashboard">
             <h1>This is the user dashboard</h1>
+
+            <button onClick={handleLogout}>Logout</button>
 
         </div>
     )

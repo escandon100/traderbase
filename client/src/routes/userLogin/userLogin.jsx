@@ -1,9 +1,11 @@
 import  { React,useState } from 'react';
-import { Link, Navigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import axios from 'axios';
 import "./userLogin.scss"
 
 const UserLogin = () => {
+
+  const [showPassword , setShowPassword] = useState()
 
  
   const [formData , setFormData] = useState({
@@ -11,6 +13,7 @@ const UserLogin = () => {
     password : ""
   })
   const [error, setError] = useState('');
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
 
@@ -22,7 +25,7 @@ const UserLogin = () => {
     e.preventDefault()
 
     try{
-       const res = await axios.post("http://localhost:5000/api/login/send" , formData)
+       const res = await axios.post("http://localhost:5000/api/userLogin/send" , formData)
         
        localStorage.setItem("user-token" , res.data.token)
 
@@ -42,12 +45,13 @@ const UserLogin = () => {
         <label>Email Address </label>
         <input  type="email" placeholder='name@example.com' name = "email" value={formData.email} onChange={handleChange}/>
         <label>Password </label>
-        <input  name = "password" type="password" placeholder='Enter Password' value={formData.password} onChange={handleChange}/>
+        <input  name = "password" type={showPassword ? "text" : "password"} placeholder='Enter Password' value={formData.password} onChange={handleChange}/>
+        <button onClick={() => { setShowPassword(!showPassword)}}></button>
         <button type="submit">Login</button>
           {error && <p className="error">{error}</p>}
 
         <p>Forgot your password <Link to="/passwordReset" className='link'>Reset</Link></p>
-        <p>Don't have an account yet ? <Link className='link' to="/register">Sign up</Link></p>
+        <p>Don't have an account yet ? <Link className='link' to="/userRegister">Sign up</Link></p>
         <p>© Copyright 2025   Trader Base FX   All Rights Reserved.</p>
        </form>
       

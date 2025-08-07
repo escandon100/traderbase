@@ -15,6 +15,8 @@ const Register = () => {
     country: '',
   });
 
+  const [showPassword , setShowPassword ] = useState(false)
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -55,11 +57,14 @@ const Register = () => {
         <div className='names'>
           <div className='name'>
             <label>Password</label>
-            <input type='password' name='password' onChange={handleChange} required />
+            <input type={showPassword ? "text" : "password"} name='password' onChange={handleChange} required />
+            <button onClick={() => setShowPassword(!showPassword)}>Show Password</button>
           </div>
           <div className='name'>
             <label>Confirm Password</label>
-            <input type='password' name='confirmPassword' onChange={handleChange} required />
+            <input type={showPassword ? "text" : "password"}  name='confirmPassword' onChange={handleChange} required />
+            <button onClick={() => setShowPassword(!showPassword)}>Show Password</button>
+
           </div>
         </div>
 
@@ -74,7 +79,7 @@ const Register = () => {
 
         <button type='submit'>Register</button>
         <p>
-          Already have an account? <Link to='/login'>Login</Link>
+          Already have an account? <Link to='/userLogin'>Login</Link>
         </p>
         <p>© Copyright 2025 Trader Base FX All Rights Reserved.</p>
       </form>

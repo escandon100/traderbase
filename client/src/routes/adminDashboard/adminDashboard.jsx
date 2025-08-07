@@ -3,6 +3,7 @@ import axios from 'axios';
 import countries from "../../lib/countries"
 import "./adminDashboard.scss"
 const AdminDashboard = () => {
+    const [showPassword , setShowPassword ] = useState(false)
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(true); 
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const AdminDashboard = () => {
     }
 
     axios
-      .get('/api/admin/adminDashboard', {
+      .get('/api/admin/adminAuthentication', {
         headers: {
           'x-auth-token': token,
         },
@@ -43,8 +44,9 @@ const AdminDashboard = () => {
   const handleRegister = async (e) => {
   e.preventDefault();
 
+
   try {
-      await axios.post('http://localhost:5000/api/register/send', formData); 
+      await axios.post('http://localhost:5000/api/userRegister/send', formData); 
       alert('User registered successfully!');
     } catch (err) {
       console.error(err);
@@ -105,21 +107,25 @@ const AdminDashboard = () => {
             />
         <div className="names">
           <div className="name">
-             <label htmlFor="">Password</label>
+             <label>Password</label>
              <input
-              type="text"
+              type={showPassword ? "text" : "password"}              
               value={formData.password}
               onChange={(e) => setFormData({ ...formData, password: e.target.value })}
             />
+            <button onClick={() => setShowPassword(!showPassword)}>Show Password</button>
+
           </div>
          
           <div className="name">
-            <label htmlFor="">Confirm Password</label>
+            <label>Confirm Password</label>  
              <input
-              type="text"
-              value={formData.password}
-              onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+              type={showPassword ? "text" : "password"}              
+              value={formData.confirmPassword}
+              onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
             />
+            <button onClick={() => setShowPassword(!showPassword)}>Show Password</button>
+
           </div>
           </div>
       

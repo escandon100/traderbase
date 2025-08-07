@@ -1,5 +1,5 @@
 import { Router } from "express"
-import verifyUser from "../middleware/userAuth.js"
+import verifyUser from "../middleware/userAuthentication.js"
 
 const router = Router()
 
