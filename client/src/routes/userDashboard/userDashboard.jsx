@@ -3,27 +3,21 @@ import axios from "axios";
 import "./userDashboard.scss"
 
 const UserDashboard = () => {
-
       const [message, setMessage] = useState('');
       const [loading, setLoading] = useState(true); 
 
+
       useEffect(() => {
         const token = localStorage.getItem('user-token');
+
         if (!token) {
           window.location.href = '/userLogin';
           return;
         }
     
-        axios
-          .get('/api/user/userDashboard', {
-            headers: {
-              'x-auth-token': token,
-            },
-          })
-          .then((res) => {
-            setMessage(res.data.message)
-            setLoading(false)
-          
+        axios.get('http://localhost:5000/api/userDashboard/send/', { headers: { 'user-token': token}}).then((res) => {
+             setMessage(res.data.message)
+             setLoading(false)
           }
           )
           .catch(() => {
@@ -42,8 +36,7 @@ const UserDashboard = () => {
 
     return(
         <div className="userDashboard">
-            <h1>This is the user dashboard</h1>
-
+            <h1>{message}</h1>
             <button onClick={handleLogout}>Logout</button>
 
         </div>

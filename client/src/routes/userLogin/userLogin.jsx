@@ -1,26 +1,24 @@
 import  { React,useState } from 'react';
 import { Link, useNavigate } from 'react-router';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import "./userLogin.scss"
 
 const UserLogin = () => {
-
-  const [showPassword , setShowPassword] = useState()
-
- 
-  const [formData , setFormData] = useState({
-    email : "",
-    password : ""
-  })
+  const [formData , setFormData] = useState({email : "",password : ""})
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate()
 
-  const handleChange = (e) => {
 
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(prev => !prev);
+  };
+
+  const handleChange = (e) => {
     setFormData({...formData , [e.target.name] : e.target.value})
   }
-
-
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -28,6 +26,7 @@ const UserLogin = () => {
        const res = await axios.post("http://localhost:5000/api/userLogin/send" , formData)
         
        localStorage.setItem("user-token" , res.data.token)
+
 
        navigate("/userDashboard")
 
@@ -44,9 +43,12 @@ const UserLogin = () => {
         <h1>User Login</h1>
         <label>Email Address </label>
         <input  type="email" placeholder='name@example.com' name = "email" value={formData.email} onChange={handleChange}/>
+
         <label>Password </label>
-        <input  name = "password" type={showPassword ? "text" : "password"} placeholder='Enter Password' value={formData.password} onChange={handleChange}/>
-        <button onClick={() => { setShowPassword(!showPassword)}}></button>
+        <div className="passwordInput">
+          <input name ="password" type={passwordVisible ? "text" : "password"} placeholder='Enter Password' value={formData.password} onChange={handleChange}/>
+          <span onClick={togglePasswordVisibility}> <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} /></span>
+        </div>
         <button type="submit">Login</button>
           {error && <p className="error">{error}</p>}
 

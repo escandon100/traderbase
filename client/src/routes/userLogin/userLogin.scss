@@ -99,6 +99,25 @@
                 font-size: 14px;
             }
 
+          
+
+        }
+        .passwordInput{
+
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            & input{
+                position: absolute;
+                left: 0;
+                width: 95%;
+            }
+            & span{
+                position: absolute;
+                right: 0;
+            }
 
         }
 
